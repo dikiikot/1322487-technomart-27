@@ -11,7 +11,7 @@
          </h1>
          <div>
             <a href="index.html"><img src="img/logo.svg" alt="Магазин Техномарт"></a>
-            Поиск
+            <a href="#">Поиск</a>
             <a href="#">Закладки</a>
             <a href="#">Корзина</a>
             <a href="#">Оформить заказ</a>
@@ -23,7 +23,7 @@
          <a href="tel:+7(812)555-05-55">+7(812)555-05-55"</a>
          <address> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
          <!--<p>Форма  с данными пользователя</p>-->
-         Равшан Джамшутович
+         <p>Равшан Джамшутович</p>
          <a href="#">Мои заказы</a>
          <a href="#">Личный кабинет</a>
          <nav>
@@ -48,23 +48,47 @@
          <span>Сортировка:</span>
          <!-- Здесь будет фильтр по цене, по типу, по функциям-->
          <section>
-            <p>Производители:</p>
-            <ul>
-               <!-- Select multiple -->
-               <!--Форма выбора производителя -->
-               <li>Bosch</li>
-               <li>Интрескол</li>
-               <li>Makita</li>
-               <li>Dewalt</li>
-               <li>Hitachi</li>
-            </ul>
+            <form action="#">
+               <fieldset>
+            <legend>Производители:</legend>
+            <label>
+            <input type="checkbox" name ="Производители" value="BOSCH" checked>
+            BOSCH
+            </label>
+            
+            <label>
+            <input type="checkbox" name ="Производители" value="Интерскол">
+            Интерскол
+            </label>
+            
+            <label>
+            <input type="checkbox" name ="Производители" value="Makita" checked>
+            Makita
+            </label>
+            
+            <label>
+            <input type="checkbox" name ="Производители" value="DeWalt">
+            DeWalt
+            </label>
+            
+            <label>
+            <input type="checkbox" name ="Производители" value="Hitachi">
+            Hitachi
+            </label>
+            </fieldset>
+            </form>
+            
             <p>Питание:</p>
-            <ul>
-               <!-- Select multiple-->
-               <!--Форма выбора питания -->
-               <li>Аккумуляторные</li>
-               <li>Сетевые</li>
-            </ul>
+            <label>
+            <input type="radio" name="variants" value="Аккумуляторные" checked>
+            Аккумуляторные
+            </label>
+            
+            <label>
+            <input type="radio" name="variants" value="Сетевые">
+            Сетевые
+            </label>
+            
             <span><a href="#">Показать</a></span>
             <h2>Перфораторы</h2>
             <ul>
@@ -215,17 +239,17 @@
          <input type="submit" value="2">
          <input type="submit" value="3">
          <input type="submit" value="следующая">
-      </main>
-      <footer>
          <article>
             <h2>Пара слов о перфораторах</h2>
-            <pre>
+            <p>
 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
 ассортиментном ряду есть выбор «трехрежимников»:в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-</pre>
+</p>
          </article>
-         <section>
+      </main>
+      <footer>
+<div>
             <a href="#"><img src="img/logo.svg" alt="Магазин Техномарт"></a>
             <ul>
                <li><a href="#">index.html</a></li>
@@ -240,7 +264,7 @@
                <li><a href="#">Инструмент</a></li>
                <li><a href="#">Спецпредложения</a> </li>
             </ul>
-         </section>
+         </div>
          <p>© 2010–2019 Компания «Техномарт»
             Все права защищены
          </p>
