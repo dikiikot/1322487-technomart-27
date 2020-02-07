@@ -4,30 +4,40 @@
 <head>
    <meta charset="utf-8" />
    <title>HTML Academy: Техномарт</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+      rel="stylesheet">
+
 </head>
 
 <body>
-   <header>
-      <h1>
+   <header class="main-header">
+      <h1 class="visually-hidden">
          Интернет-магазин строительных материалов и инструментов для ремонта
       </h1>
-      <div>
-         <a href="#"><img src="img/logo.svg" width="109" height="19" alt=" Магазин Техномарт"></a>
+      <div class="site-navigation">
+         <a class="main-header-logo" href="#"><img src="img/logo.svg" width="109" height="19"
+               alt=" Магазин Техномарт"></a>
          <form action="https://echo.htmlacademy.ru" method="POST">
             <label for="cite-search">Поиск</label>
             <input type="search" id="cite-search" name="Поиск">
          </form>
+         <div>
          <a href="#">Закладки</a>
          <a href="#">Корзина</a>
-         <a href="#">Оформить заказ</a>
+         <a class="button-order" href="#">Оформить заказ</a>
+         </div>
       </div>
-      <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
-      <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+      <p class="logo-title">Интернет магазин строительных материалов и инструментов для ремонта</p>
+      <a class="contacts" href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <a href="#">Войти</a>
-      <a href="#">Регисрация</a>
-      <nav>
-         <ul>
+      <a class="button-link" href="#">Войти</a>
+      <a class="button-link" href="#">Регистрация</a>
+      <nav class="main-navigation">
+         <ul class="user-navigation">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
