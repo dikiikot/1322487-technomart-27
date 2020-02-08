@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -54,7 +54,7 @@ a.main-header-logo:focus {
   color: #ee3643;
 }
 .contacts {
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   color: #ee3643;
 }
 .button-order {
@@ -76,71 +76,97 @@ a.button-order:active {
 .search:focus {
   background-color: #ffffff;
 }
-.visually-hidden{
-    display: none;
+.visually-hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-/* Описывает цветные карточки */
-.icon-1 {
+
+.icon-materials {
+  /* Описывает цветные карточки */
   background-color: #ffbf47;
-  color: white;
+  color: #ffffff;
   background-image: url("img/icon-bucket.svg");
   width: 300px;
   height: 123px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
 }
-.link-icon-1 {
-  background-color: black;
-  opacity: 0.1;
+.link-icon {
+  /* Задает стиль всем нажимаемым кнопкам на  цветных  вставках */
+  background-color: rgba(0, 0, 0, 0.1);
+
   width: 135px;
   height: 138px;
-  color: white; 
+  color: #ffffff;
 }
-a.link-icon-1:hover,
-a.link-icon-1:focus {
-  background-color: black;
+a.link-icon:hover,
+a.link-icon:focus {
+  background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.2;
-  color: white;
+  color: #ffffff;
 }
-a.link-icon-1:active {
-  background-color: black;
+a.link-icon:active {
+  background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.3;
-  color: white;
+  color: #ffffff;
 }
-.icon-2 {
+.icon-instrument {
   background-color: #3bbce3;
   color: white;
   background-image: url("img/.icon-2");
   width: 300px;
   height: 123px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
 }
-.link-icon-2 {
-  background-color: black;
-  opacity: 0.1;
-  width: 135px;
-  height: 138px;
-}
-a.link-icon-2:hover,
-a.link-icon-2:focus {
-  background-color: black;
-  opacity: 0.2;
-  color: white;
-}
-a.link-icon-2:active {
-  background-color: black;
-  opacity: 0.3;
-  color: white;
+
+.icon-technicks {
+  background-color: #dc91d8;
+  color: #ffffff;
+  background-image: url("img/.icon-3");
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
 }
 
-.popular-it { /* Убирает точки у списка всех популярных товаров*/
+.icon-discount {
+  background-color: #8ed78f;
+  color: #ffffff;
+  background-image: url("img/.icon-4");
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.icon-delivery {
+  background-color: #ffc047;
+  color: #ffffff;
+  background-image: url("img/.icon-5");
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.popular-it {
+  /* Убирает точки у списка всех популярных товаров*/
   list-style: none;
 }
-.popular-items {
-  /* Выделение популярных товаров*/
+.popular-card {
+  /* Выделение популярных товаров  и производителей*/
   background-color: #f9f5f0;
   height: 89px;
   font-size: 30px;
@@ -149,14 +175,15 @@ a.link-icon-2:active {
   padding-left: 20px;
   font-weight: normal;
 }
-.link-popular-items {
-  /* Кнопка у популярных товаров*/
+.link-popular-card {
+  /* Кнопка у популярных товаров и производителей*/
   background-color: #ee3643;
   color: white;
   font-size: 18px;
   text-align: right;
+  padding: 10px;
 }
-.item1 {
+.description-card {
   /* Карточка товара*/
   width: 220px;
   height: 318px;
@@ -166,7 +193,7 @@ a.link-icon-2:active {
 .catalog-items {
   /* Описание товара в карточке товара*/
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px;
   text-align: center;
   vertical-align: top;
@@ -178,22 +205,270 @@ a.link-icon-2:active {
   display: none;
   list-style: none;
 }
-.top-price { /* зачеркнутая цена */
+.top-price {
+  /* зачеркнутая цена */
   font-family: "PT Sans";
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
   color: #a9a9a9;
   text-align: center;
   text-decoration: line-through;
 }
-.bottom-price {/* цена на красной кнопке*/
-  font-family: "Pt Sans";
+.bottom-price {
+  /* цена на красной кнопке*/
+  font-family: "Pt Sans", sans-serif;
   font-size: 17px;
-  font-weight: bold;
-  line-height: 1px;
-  color: #black;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
   text-align: center;
-  background-image: url("img/red-button.png");
+  background-image: url(../img/red-button.png);
   vertical-align: bottom;
+  background-repeat: no-repeat;
+}
+.maker-card {
+  /* Оформление карточки  с названием производителя*/
+  width: 220px;
+  height: 145px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.options {
+  /* Описывает класс доп опций магазина*/
+  background-color: #f4f7f9;
+}
+.services-options {
+  /*Описывает заголовок секции */
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+}
+.delivery-options {
+  /* Описание заголовков доп опций */
+  font-family: "Cuprum";
+  font-size: 36px;
+  font-weight: 400;
+  color: #32425c;
+}
+content-options {
+  /* Описание текста в секции*/
+  font-size: 13px;
+}
+.section-title {
+  /* Описывает заголовки секции*/
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+}
+.section-content {
+  /* Описывает оформление текста в секции*/
+  font-size: 13px;
+  font-weight: 400;
+}
+.delivery-services {
+  /* Описываем список и маркировку тире*/
+  list-style: none;
+}
+ul.delivery-services {
+  list-style: none;
+  margin-left: 10px;
+}
+ul.delivery-services li:before {
+  content: "—";
+  position: relative;
+  left: -5px;
+  color: #ee3643;
+  font-weight: 700;
+}
+.redbutton-services {
+  /* Описывает оформление красных кнопок  в секции*/
+  font-family: "Cuprum";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 10px;
+}
+.footer-top {
+  /* Описывает верхнюю часть футера*/
+  background-color: #32425c;
+  margin-top: 10px;
+}
+.footer-logo {
+  /*Логотип футера */
+  background-color: #ee3643;
+}
+.footer-links-top {
+  /* Убирает маркировку у списка*/
+  list-style: none;
+}
+.footer-links-top a {
+  /* Описывает поведение первой строчки ссылок в футере*/
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  color: #f1f5f7;
+}
+.footer-links-top a:hover,
+.footer-links-top a:focus {
+  text-decoration: underline;
+}
+.footer-links-top a:active {
+  text-decoration: none;
+  color: rgba (241 245 247, 0.5);
+}
+.footer-links-bottom {
+  /*  Убираем маркировку списка */
+  list-style: none;
+}
+.footer-links-bottom a {
+  /* Описывает поведение нижней строчки ссылок в футере*/
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffd180;
+}
+.footer-links-bottom a:hover,
+.footer-links-bottom a:focus {
+  text-decoration: underline;
+}
+.footer-links-bottom a:active {
+  text-decoration: none;
+  color: (rgba 255 209 128, 0.5);
+}
+.contacts-footer {
+  color: #f3f7f9;
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
 
+.footer-bottom {
+  /* Описывает нижнюю часть футера*/
+  background-color: #293449;
+  margin-top: -20px;
+}
+.rules-protect {
+  /* Техническая инфо*/
+  color: #ffffff;
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: 400;
+}
+.feedback {
+  /* */
+  color: #ffffff;
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-link-service {
+  /*Описывает ссылки с служебной инфой */
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffd180;
+}
+.footer-link-service:hover,
+.footer-link-service:focus {
+  text-decoration: underline;
+}
+.footer-link-service:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+.media {
+  /* Убирает маркеры у списка медиа иконок*/
+  list-style: none;
+}
+.media-link {
+  /* Стилизует медиа иконки */
+  background-color: #212a3a;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+.media-link:hover,
+.media-link:focus,
+.media-link:active {
+  background-color: #ee3643;
+}
+
+.text-slider {
+  /* текс на слайдере*/
+  position: relative;
+  width: 100%;
+}
+.sign {
+  /*Первая надпись на слайдере */
+  position: absolute;
+  width: 100%;
+  left: 20px;
+  top: 30px;
+  font-family: "Cuprum";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+}
+.sign-bottom {
+  /* Вторая надпись на слайдере */
+  position: absolute;
+  width: 100%;
+  left: 20px;
+  top: 60px;
+  font-family: "PTSans";
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+}
+.slider-link {
+  /*  Цветная кнопка на слайдере */
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #ee3643;
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+}
+.slider-link:hover,
+.slider-link:focus {
+  background-color: #ca2c37;
+}
+.slider-link:active {
+  background-color: #ba2732;
+}
+.product-info {
+  /* Задаем фон для секции */
+  background-color: #f4f7f9;
+}
+.product-title {
+  /* Заголовок*/
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.product-text {
+  /* текст*/
+  font-family: "PTSans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.section-items{
+  background-color: #f2f6f8;
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
 }
