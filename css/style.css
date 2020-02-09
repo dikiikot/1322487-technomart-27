@@ -89,7 +89,9 @@ a.button-order:active {
 }
 
 .icon-materials {
+  
   /* Описывает цветные карточки */
+ 
   background-color: #ffbf47;
   color: #ffffff;
   background-image: url("img/icon-bucket.svg");
@@ -168,6 +170,7 @@ a.link-icon:active {
 .popular-card {
   /* Выделение популярных товаров  и производителей*/
   background-color: #f9f5f0;
+  position: relative;
   height: 89px;
   font-size: 30px;
   text-align: left;
@@ -178,10 +181,13 @@ a.link-icon:active {
 .link-popular-card {
   /* Кнопка у популярных товаров и производителей*/
   background-color: #ee3643;
+  position: relative;
+  left: 700px;
+ top: -100px;
   color: white;
   font-size: 18px;
   text-align: right;
-  padding: 10px;
+  
 }
 .description-card {
   /* Карточка товара*/
@@ -391,6 +397,9 @@ ul.delivery-services li:before {
   border-radius: 50%;
   width: 42px;
   height: 42px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .media-link:hover,
 .media-link:focus,
