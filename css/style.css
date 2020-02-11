@@ -124,90 +124,73 @@ a.button-order:active {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.icon-materials {
-  /* Описывает цветные карточки */
-  font-family: "Cuprum", Arial, sans-serif;
-  line-height: 30px;
-  background-color: #ffbf47;
-  color: #ffffff;
-  background-image: url("img/icon-bucket.svg");
-  width: 300px;
-  height: 123px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
-}
-.button-color {
+.button-list-option {
   /* Задает стиль всем нажимаемым кнопкам на  цветных  вставках */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 135px;
-  height: 138px;
+  height: 38px;
   color: #ffffff;
+  position: absolute;
+  left: 25px;
+  top: 63px;
+  text-align: center;
 }
-
-a.button-color:hover,
-a.button-color:focus {
+/* Объясни мне пожалуйста завтра, я опять не понимаю*/
+a.button-list-option:hover,
+a.button-list-option:focus {
   background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0.2;
   color: #ffffff;
 }
 
-a.button-color:active {
+a.button-list-option:active {
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.3;
 }
-.icon-instrument {
+/* Задает стиль оформления цветовых блоков */
+.list-option {
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
+  color: #ffffff;
+  font-size: 24px;
+  width: 300px;
+  height: 123px;
+  font-weight: 700;
+  text-align: left;
+  display: block;
+  position: relative;
+  background-image: url("../img/icon-bucket.png");
+  background-repeat: no-repeat;
+  background-size: 44px 65px;
+  background-position-x: 189px;
+  background-position-y: 30px;
+}
+
+.bgcolor-orange {
+  position: relative;
+  background-color: #ffbf47;
+  width: 300px;
+}
+.bgcolor-blue {
+  position: relative;
   background-color: #3bbce3;
-  color: white;
-  background-image: url("img/.icon-2");
   width: 300px;
-  height: 123px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
 }
-
-.icon-technicks {
-  font-family: "Cuprum", Arial, sans-serif;
-  line-height: 30px;
+.bgcolor-violet {
+  position: relative;
   background-color: #dc91d8;
-  color: #ffffff;
-  background-image: url("img/.icon-3");
   width: 300px;
-  height: 123px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
 }
-
-.icon-discount {
-  font-family: "Cuprum", Arial, sans-serif;
-  line-height: 30px;
+.bgcolor-green {
+  position: relative;
   background-color: #8ed78f;
-  color: #ffffff;
-  background-image: url("img/.icon-4");
   width: 300px;
-  height: 123px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
 }
-.icon-delivery {
-  font-family: "Cuprum", Arial, sans-serif;
-  line-height: 30px;
+.bgcolor-pale {
+  position: relative;
   background-color: #ffc047;
-  color: #ffffff;
-  background-image: url("img/.icon-5");
   width: 300px;
-  height: 123px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
 }
 
 .popular-it {
@@ -219,7 +202,7 @@ a.button-color:active {
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f9f5f0;
   position: relative;
-  height: 89px;
+
   line-height: 30px;
   font-size: 30px;
   text-align: left;
@@ -232,8 +215,8 @@ a.button-color:active {
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #ee3643;
   position: relative;
-  left: 700px;
-  top: -100px;
+  top: -70px;
+  left: 793px;
   color: white;
   font-size: 14px;
   line-height: 18px;
@@ -250,7 +233,7 @@ a.button-color:active {
 .description-card {
   /* Карточка товара*/
   width: 220px;
-  height: 318px;
+
   border: 1px solid #eaeaea;
   background-color: white;
 }
@@ -269,7 +252,6 @@ a.button-color:active {
   text-align: center;
   vertical-align: top;
   padding-top: 0px;
-  margin-top: -40px;
 }
 
 /* Вот тут надо было классы сделать на цены, я решил обойтись псевдоклассами
@@ -469,7 +451,6 @@ ul.delivery-services li:before {
 .footer-bottom {
   /* Описывает нижнюю часть футера*/
   background-color: #293449;
-  margin-top: -20px;
 }
 .rules-protect {
   /* Техническая инфо*/
