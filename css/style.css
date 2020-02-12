@@ -9,31 +9,38 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
 a {
   text-decoration: none;
 }
+
 .site-navigation {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
+
 .user-navigation {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
   list-style: none;
 }
+
 .main-navigation,
 .site-navigation {
   background-color: #32425c;
 }
+
 .main-header {
   background-color: #f4f7f9;
 }
+
 .user-navigation a,
 .site-navigation a {
   color: #ffffff;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -48,6 +55,7 @@ a {
   line-height: 21px;
   color: #000000;
 }
+
 .name-form:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -59,10 +67,12 @@ a {
   font-size: 16px;
   text-decoration: underline;
 }
+
 .button-link:hover,
 .button-link:focus {
   color: #ee3643;
 }
+
 .button-link:active {
   color: rgba(50, 66, 92, 0.3);
 }
@@ -70,10 +80,12 @@ a {
 .main-header-logo {
   background-color: #ee3643;
 }
+
 a.main-header-logo:hover,
 a.main-header-logo:focus {
   background-color: #ca2c37;
 }
+
 .logo-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
@@ -81,6 +93,7 @@ a.main-header-logo:focus {
   font-style: italic;
   color: #ee3643;
 }
+
 .contacts {
   font-family: "Cuprum", Arial, sans-serif;
   border: 1px solid #ffffff;
@@ -88,28 +101,35 @@ a.main-header-logo:focus {
   font-size: 21px;
   line-height: 21px;
 }
+
 .adress {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
 }
+
 .button-order {
   background-color: #63a63e;
 }
+
 a.button-order:hover,
 a.button-order:focus {
   background-color: #5fbb2d;
 }
+
 a.button-order:active {
   background-color: #518534;
 }
+
 .search {
   color: #ffffff;
 }
+
 .search:hover {
   background-color: #212a3a;
 }
+
 .search:focus {
   background-color: #ffffff;
 }
@@ -124,7 +144,7 @@ a.button-order:active {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.button-list-option {
+.button-block-color {
   /* Задает стиль всем нажимаемым кнопкам на  цветных  вставках */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -137,19 +157,20 @@ a.button-order:active {
   top: 63px;
   text-align: center;
 }
+
 /* Объясни мне пожалуйста завтра, я опять не понимаю*/
-a.button-list-option:hover,
-a.button-list-option:focus {
+a.button-block-color:hover,
+a.button-block-color:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
 }
 
-a.button-list-option:active {
+a.button-block-color:active {
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.3;
 }
 /* Задает стиль оформления цветовых блоков */
-.list-option {
+.block-color {
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
   color: #ffffff;
@@ -172,21 +193,25 @@ a.button-list-option:active {
   background-color: #ffbf47;
   width: 300px;
 }
+
 .bgcolor-blue {
   position: relative;
   background-color: #3bbce3;
   width: 300px;
 }
+
 .bgcolor-violet {
   position: relative;
   background-color: #dc91d8;
   width: 300px;
 }
+
 .bgcolor-green {
   position: relative;
   background-color: #8ed78f;
   width: 300px;
 }
+
 .bgcolor-pale {
   position: relative;
   background-color: #ffc047;
@@ -197,12 +222,12 @@ a.button-list-option:active {
   /* Убирает точки у списка всех популярных товаров*/
   list-style: none;
 }
+
 .popular-card {
   /* Выделение популярных товаров  и производителей*/
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f9f5f0;
   position: relative;
-
   line-height: 30px;
   font-size: 30px;
   text-align: left;
@@ -210,6 +235,7 @@ a.button-list-option:active {
   padding-left: 20px;
   font-weight: normal;
 }
+
 .buttonred {
   /* Красные кнопки*/
   font-family: "Cuprum", Arial, sans-serif;
@@ -223,20 +249,23 @@ a.button-list-option:active {
   text-align: center;
   padding: 10px;
 }
+
 .buttonred:hover,
 .buttonred:focus {
   background-color: #ca2c37;
 }
+
 .buttonred:active {
   background-color: #ba2732;
 }
+
 .description-card {
   /* Карточка товара*/
   width: 220px;
-
   border: 1px solid #eaeaea;
   background-color: white;
 }
+
 .description-card:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   background-color: #ffffff;
@@ -273,6 +302,7 @@ a.button-list-option:active {
   background-color: #5fbb2d;
   color: #000000;
 }
+
 .link-card li:first-child:active {
   background-color: #518534;
 }
@@ -281,6 +311,7 @@ a.button-list-option:active {
 .link-card li:last-child:focus {
   border: solid 3px #32425c;
 }
+
 .link-card li:last-child:active {
   opacity: 0.3;
   border: solid 3px #32425c;
@@ -300,6 +331,7 @@ a.button-list-option:active {
   text-align: center;
   text-decoration: line-through;
 }
+
 .bottom-price {
   /* цена на красной кнопке*/
   font-family: "PTSans", Arial, sans-serif;
@@ -308,10 +340,11 @@ a.button-list-option:active {
   line-height: 18px;
   color: #000000;
   text-align: center;
-  background-image: url(../img/red-button.png);
+  background-image: url("../img/red-button.png");
   vertical-align: bottom;
   background-repeat: no-repeat;
 }
+
 .maker-card {
   /* Оформление карточки  с названием производителя*/
   width: 220px;
@@ -320,11 +353,13 @@ a.button-list-option:active {
   border: 1px solid #eaeaea;
   text-align: center;
 }
+
 .maker-card:hover,
 .maker-card:focus {
   box-shadow: 0px 10px 25px 0;
   color: rgba(41, 52, 73, 0.5);
 }
+
 .maker-card:active {
   box-shadow: 0px 4px 10px 0;
   color: rgba(41, 52, 73, 0.5);
@@ -335,6 +370,7 @@ a.button-list-option:active {
   /* Описывает класс доп опций магазина*/
   background-color: #f4f7f9;
 }
+
 .services-options {
   /*Описывает заголовок секции */
   font-family: "Cuprum", Arial, sans-serif;
@@ -342,6 +378,7 @@ a.button-list-option:active {
   line-height: 30px;
   font-weight: 400;
 }
+
 .delivery-options {
   /* Описание заголовков доп опций */
   font-family: "Cuprum", Arial, sans-serif;
@@ -350,6 +387,7 @@ a.button-list-option:active {
   font-weight: 400;
   color: #32425c;
 }
+
 content-options {
   /* Описание текста в секции*/
   font-family: "PTSans", Arial, sans-serif;
@@ -357,6 +395,7 @@ content-options {
   line-height: 24px;
   font-weight: 400;
 }
+
 .section-title {
   /* Описывает заголовки секции*/
   font-family: "Cuprum", Arial, sans-serif;
@@ -364,6 +403,7 @@ content-options {
   line-height: 30px;
   font-weight: 400;
 }
+
 .section-content {
   /* Описывает оформление текста в секции*/
   font-family: "PTSans", Arial, sans-serif;
@@ -371,6 +411,7 @@ content-options {
   line-height: 24px;
   font-weight: 400;
 }
+
 .delivery-services {
   /* Описываем список и маркировку тире*/
   font-family: "Cuprum", Arial, sans-serif;
@@ -378,10 +419,12 @@ content-options {
   line-height: 20px;
   list-style: none;
 }
+
 ul.delivery-services {
   list-style: none;
   margin-left: 10px;
 }
+
 ul.delivery-services li:before {
   content: "—";
   position: relative;
@@ -395,10 +438,12 @@ ul.delivery-services li:before {
   background-color: #32425c;
   margin-top: 10px;
 }
+
 .footer-logo {
   /*Логотип футера */
   background-color: #ee3643;
 }
+
 .footer-links-top {
   /* Убирает маркировку у списка*/
   list-style: none;
@@ -407,6 +452,7 @@ ul.delivery-services li:before {
   font-size: 18px;
   font-weight: 400;
 }
+
 .footer-links-top a {
   /* Описывает поведение первой строчки ссылок в футере*/
   color: #f1f5f7;
@@ -415,10 +461,12 @@ ul.delivery-services li:before {
 .footer-links-top a:focus {
   text-decoration: underline;
 }
+
 .footer-links-top a:active {
   text-decoration: none;
   color: rgba (241 245 247, 0.5);
 }
+
 .footer-links-bottom {
   /*  Убираем маркировку списка */
   list-style: none;
@@ -427,18 +475,22 @@ ul.delivery-services li:before {
   font-size: 18px;
   font-weight: 400;
 }
+
 .footer-links-bottom a {
   /* Описывает поведение нижней строчки ссылок в футере*/
   color: #ffd180;
 }
+
 .footer-links-bottom a:hover,
 .footer-links-bottom a:focus {
   text-decoration: underline;
 }
+
 .footer-links-bottom a:active {
   text-decoration: none;
   color: (rgba 255 209 128, 0.5);
 }
+
 .contacts-footer {
   color: #f3f7f9;
   font-family: "Cuprum", Arial, sans-serif;
@@ -452,6 +504,7 @@ ul.delivery-services li:before {
   /* Описывает нижнюю часть футера*/
   background-color: #293449;
 }
+
 .rules-protect {
   /* Техническая инфо*/
   color: #ffffff;
@@ -460,6 +513,7 @@ ul.delivery-services li:before {
   font-size: 16px;
   font-weight: 400;
 }
+
 .feedback {
   /* */
   color: #ffffff;
@@ -468,6 +522,7 @@ ul.delivery-services li:before {
   font-size: 16px;
   font-weight: 400;
 }
+
 .footer-link-service {
   /*Описывает ссылки с служебной инфой */
   font-family: "Cuprum", Arial, sans-serif;
@@ -477,18 +532,22 @@ ul.delivery-services li:before {
   line-height: 18px;
   color: #ffd180;
 }
+
 .footer-link-service:hover,
 .footer-link-service:focus {
   text-decoration: underline;
 }
+
 .footer-link-service:active {
   text-decoration: none;
   color: #ee3643;
 }
+
 .media {
   /* Убирает маркеры у списка медиа иконок*/
   list-style: none;
 }
+
 .media-link {
   /* Стилизует медиа иконки */
   background-color: #212a3a;
@@ -499,6 +558,7 @@ ul.delivery-services li:before {
   justify-content: center;
   align-items: center;
 }
+
 .media-link:hover,
 .media-link:focus,
 .media-link:active {
@@ -510,6 +570,7 @@ ul.delivery-services li:before {
   position: relative;
   width: 100%;
 }
+
 .sign {
   /*Первая надпись на слайдере */
   position: absolute;
@@ -523,6 +584,7 @@ ul.delivery-services li:before {
   text-align: left;
   color: #ffffff;
 }
+
 .sign-bottom {
   /* Вторая надпись на слайдере */
   position: absolute;
@@ -536,6 +598,7 @@ ul.delivery-services li:before {
   color: #ffffff;
   line-height: 24px;
 }
+
 .slider-link {
   /*  Цветная кнопка на слайдере */
   position: absolute;
@@ -549,17 +612,21 @@ ul.delivery-services li:before {
   font-weight: 400;
   padding: 10px;
 }
+
 .slider-link:hover,
 .slider-link:focus {
   background-color: #ca2c37;
 }
+
 .slider-link:active {
   background-color: #ba2732;
 }
+
 .product-info {
   /* Задаем фон для секции */
   background-color: #f4f7f9;
 }
+
 .product-title {
   /* Заголовок*/
   font-family: "Cuprum", Arial, sans-serif;
@@ -568,6 +635,7 @@ ul.delivery-services li:before {
   font-weight: 400;
   text-align: left;
 }
+
 .product-text {
   /* текст*/
   font-family: "PTSans", Arial, sans-serif;
@@ -575,6 +643,7 @@ ul.delivery-services li:before {
   font-weight: 400;
   line-height: 24px;
 }
+
 .section-items {
   background-color: #f2f6f8;
   font-family: "Cuprum", Arial, sans-serif;
@@ -582,6 +651,7 @@ ul.delivery-services li:before {
   font-weight: 400;
   line-height: 30px;
 }
+
 .page-number {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
@@ -592,43 +662,37 @@ ul.delivery-services li:before {
   height: 38px;
   display: block;
 }
-.page1,
-.page2,
-.page3,
-.page-next {
+
+.page-numbers {
   border: solid 1px #e5e5e5;
 }
 
-.page1:hover,
-.page2:hover,
-.page3:hover,
-.page-next:hover,
-.page1:focus,
-.page2:focus,
-.page3:focus,
-.page-next:focus {
+.page-numbers:hover,
+.page-numbers:focus {
   border: solid 1px #bdc6ca;
 }
-.page1:active,
-.page2:active,
-.page3:active,
-.page-next:active {
+
+.page-numbers:active {
   border: solid 1px #ee3643;
 }
+
 .sort {
   background-color: #f7f3ec;
   display: inline;
 }
+
 .sort-type {
   display: inline;
   background-color: #f7f3ec;
   border-bottom: 1px solid #ee3643;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .sort-type:hover,
 .sort-type:focus {
   color: #000000;
 }
+
 .sort-type:active {
   color: #ee3643;
 }
