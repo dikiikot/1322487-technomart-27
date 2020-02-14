@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
@@ -15,6 +15,13 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: row;
+  min-height: 42px;
+  min-width: 1200px;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  align-items: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -25,6 +32,17 @@ a {
   font-size: 17px;
   line-height: 17px;
   list-style: none;
+}
+.main-navigation {
+  margin-right: 130px;
+  margin-left: 130px;
+}
+.user-navigation {
+  display: flex;
+  min-height: 60px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-navigation,
@@ -77,13 +95,42 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.header-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button-header-wrapper {
+  display: flex;
+  margin-right: 130px;
+  flex-basis: 271px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .main-header-logo {
+  min-height: 47px;
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  margin-left: 130px;
   background-color: #ee3643;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a.main-header-logo:hover,
 a.main-header-logo:focus {
   background-color: #ca2c37;
+}
+
+a.main-header-logo:active {
+  background-color: #ba2732;
 }
 
 .logo-title {
@@ -92,6 +139,8 @@ a.main-header-logo:focus {
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+  flex-basis: 196px;
+  margin-left: 183px;
 }
 
 .contacts {
@@ -110,6 +159,7 @@ a.main-header-logo:focus {
 }
 
 .button-order {
+  margin-right: 130px;
   background-color: #63a63e;
 }
 
@@ -133,6 +183,7 @@ a.button-order:active {
 .search:focus {
   background-color: #ffffff;
 }
+
 .visually-hidden {
   display: none;
   position: absolute;
@@ -144,6 +195,7 @@ a.button-order:active {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .button-block-color {
   /* Задает стиль всем нажимаемым кнопкам на  цветных  вставках */
   font-family: "Cuprum", Arial, sans-serif;
@@ -169,7 +221,7 @@ a.button-block-color:active {
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.3;
 }
-/* Задает стиль оформления цветовых блоков */
+
 .block-color {
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
@@ -436,21 +488,45 @@ ul.delivery-services li:before {
 .footer-top {
   /* Описывает верхнюю часть футера*/
   background-color: #32425c;
-  margin-top: 10px;
+}
+.footer-top-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-logo {
   /*Логотип футера */
+  min-height: 47px;
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  margin-left: 130px;
   background-color: #ee3643;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.footer-logo:hover,
+a.footer-logo:focus {
+  background-color: #ca2c37;
+}
+
+a.footer-logo:active {
+  background-color: #ba2732;
 }
 
 .footer-links-top {
-  /* Убирает маркировку у списка*/
   list-style: none;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 24px;
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 173px;
+  padding-left: 10px;
+  flex-basis: 850px;
+  margin-right: 130px;
 }
 
 .footer-links-top a {
@@ -468,12 +544,17 @@ ul.delivery-services li:before {
 }
 
 .footer-links-bottom {
-  /*  Убираем маркировку списка */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 24px;
   font-size: 18px;
   font-weight: 400;
+  flex-basis: 745px;
+  align-items: center;
+  margin-right: 130px;
 }
 
 .footer-links-bottom a {
@@ -498,24 +579,39 @@ ul.delivery-services li:before {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 5px;
+  flex-wrap: nowrap;
+  flex-basis: 322px;
+  margin-left: 133px;
+  min-height: 40px;
 }
 
 .footer-bottom {
-  /* Описывает нижнюю часть футера*/
   background-color: #293449;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 107px;
 }
 
 .rules-protect {
   /* Техническая инфо*/
+  flex-basis: 228px;
   color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
+  margin-left: 133px;
 }
 
 .feedback {
-  /* */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 119px;
   color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
@@ -546,6 +642,10 @@ ul.delivery-services li:before {
 .media {
   /* Убирает маркеры у списка медиа иконок*/
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 132px;
+  margin-left: 169px;
 }
 
 .media-link {
@@ -695,4 +795,10 @@ ul.delivery-services li:before {
 
 .sort-type:active {
   color: #ee3643;
+}
+
+.footer-links-bottom-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
