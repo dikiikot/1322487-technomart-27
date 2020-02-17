@@ -12,7 +12,6 @@
       rel="stylesheet">
 
 </head>
-
 <body>
    <div class="header-container">
       <header class="main-header">
@@ -57,22 +56,33 @@
    </nav>
    </header>
    </div>
-   </div>
+
    <div class="main-container">
       <main>
-         <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="catalog.html">Инструмент</a></li>
-            <li>Перфораторы</li>
+         <ul class="catalog-list">
+            <li class="catalog-list-items"><a href="catalog.html">Каталог</a></li>
+            <li class="catalog-list-items"><a href="catalog.html">Инструмент</a></li>
+            <li class="catalog-list-items">Перфораторы</li>
          </ul>
+
+         <p class="section-items">
+            Перфораторы
+         </p>
+
+
+         <div class="sort-wrapper">
          <span class="sort">Сортировка:</span>
          <a class="sort-type" href="#">по цене</a>
          <a class="sort-type" href="#">по типу</a>
          <a class="sort-type" href="#">по функционалу</a>
+         </div>
          <h2 class="visually-hidden">Каталог</h2>
+         <div class="one-big-flex">
+         <div class="filters-container">
          <form action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
-               <!--Здесь видимо на JS надо связывать-->
+            
+            <fieldset style="border:0px;">  
+               <div class="filter-price-wrap">
                <p>Фильтр:</p>
                <label for="price">Цена</label>
                <input type="range" id="price" min="0" max="30000" step="500">
@@ -80,8 +90,10 @@
                   <input type="number" value="0" name="min">
                   <input type="number" value="30000" name="max">
                </div>
+               </div>
             </fieldset>
-            <fieldset>
+            <fieldset style="border: 0px;">
+               <div class="filter-vendor-wrap">
                <legend>Производители:</legend>
                <label for="Bosch">
                   <input type="checkbox" name="Производители" value="BOSCH" id="Bosch" checked />
@@ -103,8 +115,10 @@
                   <input type="checkbox" name="Производители" value="Hitachi" id="Hitachi" />
                   Hitachi
                </label>
+               </div>
             </fieldset>
-            <fieldset>
+            <fieldset style="border: 0px;">
+               <div class="filter-charger-wrap">
                <legend>Питание</legend>
                <label>
                   <input type="radio" name="Питание" value="Аккумуляторные" checked />
@@ -115,12 +129,11 @@
                   Сетевые
                </label>
                <input type="submit" value="Показать" />
+            </div>
             </fieldset>
          </form>
-         <p class="section-items">
-            Перфораторы
-         </p>
-         <ul class="popular-it">
+         </div>
+         <ul class="popular-it description-card-wrapper">
             <li>
                <article class="description-card">
                   <img src="img/item2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -263,9 +276,9 @@
                </article>
             </li>
          </ul>
-
+         </div>
          <div class="page-number">
-            <span class="page-numbers">1</span>
+            <a class="page-numbers" href="#">1</a>
             <a class="page-numbers" href="#">2</a>
             <a class="page-numbers" href="#">3</a>
             <a class="page-numbers" href="#">следующая</a>
