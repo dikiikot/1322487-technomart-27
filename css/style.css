@@ -1,3 +1,16 @@
+.header-container {
+  width: 1200px;
+  margin: auto;
+}
+.main-container {
+  width: 1200px;
+  margin: auto;
+}
+.footer-container {
+  width: 1200px;
+  margin: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +31,7 @@ a {
   display: flex;
   flex-direction: row;
   min-height: 42px;
-  min-width: 1200px;
+  width: 1200px;
   justify-content: space-between;
   margin-bottom: 46px;
   align-items: center;
@@ -78,12 +91,25 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.button-link-catalog {
+  text-decoration: underline;
+  color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
 .button-link {
-  background-color: #f4f7f9;
+  background-color: #ffffff;
   color: #000000;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
-  text-decoration: underline;
+  text-decoration: none;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  width: 121px;
+  text-align: center;
 }
 
 .button-link:hover,
@@ -104,7 +130,24 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
+.header-wrapper-catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+}
+.buttons-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button-header-wrapper {
   display: flex;
   margin-right: 130px;
@@ -197,20 +240,19 @@ a.button-order:active {
 }
 
 .button-block-color {
-  /* Задает стиль всем нажимаемым кнопкам на  цветных  вставках */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 135px;
   height: 38px;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   left: 25px;
   top: 63px;
   text-align: center;
+  color: #ffffff;
 }
 
-/* Объясни мне пожалуйста завтра, я опять не понимаю*/
 a.button-block-color:hover,
 a.button-block-color:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -238,6 +280,7 @@ a.button-block-color:active {
   background-size: 44px 65px;
   background-position-x: 189px;
   background-position-y: 30px;
+  margin-bottom: 20px;
 }
 
 .bgcolor-orange {
@@ -250,6 +293,7 @@ a.button-block-color:active {
   position: relative;
   background-color: #3bbce3;
   width: 300px;
+  margin-right: 20px;
 }
 
 .bgcolor-violet {
@@ -262,6 +306,7 @@ a.button-block-color:active {
   position: relative;
   background-color: #8ed78f;
   width: 300px;
+  margin-top: 10px;
 }
 
 .bgcolor-pale {
@@ -270,36 +315,47 @@ a.button-block-color:active {
   width: 300px;
 }
 
-.popular-it {
-  /* Убирает точки у списка всех популярных товаров*/
-  list-style: none;
+.popular-card-container {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f5f0;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .popular-card {
   /* Выделение популярных товаров  и производителей*/
   font-family: "Cuprum", Arial, sans-serif;
-  background-color: #f9f5f0;
-  position: relative;
   line-height: 30px;
   font-size: 30px;
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
   font-weight: normal;
+  margin-left: 30px;
+  margin-top: 33px;
+  margin-bottom: 35px;
+  display: inline;
 }
 
 .buttonred {
   /* Красные кнопки*/
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #ee3643;
-  position: relative;
-  top: -70px;
-  left: 793px;
   color: white;
   font-size: 14px;
   line-height: 18px;
+  width: 253px;
+  height: 38px;
   text-align: center;
-  padding: 10px;
+  margin-right: 24px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonred:hover,
@@ -311,11 +367,28 @@ a.button-block-color:active {
   background-color: #ba2732;
 }
 
+.popular-it {
+  /* Убирает точки у списка всех популярных товаров*/
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+  width: 960px;
+  margin: auto;
+  margin-top: 21px;
+}
+
 .description-card {
   /* Карточка товара*/
   width: 220px;
+  min-height: 318px;
   border: 1px solid #eaeaea;
   background-color: white;
+  margin-left: -20px;
+  margin-right: 20px;
 }
 
 .description-card:hover {
@@ -396,6 +469,15 @@ a.button-block-color:active {
   vertical-align: bottom;
   background-repeat: no-repeat;
 }
+.maker-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  width: 960px;
+}
 
 .maker-card {
   /* Оформление карточки  с названием производителя*/
@@ -403,7 +485,10 @@ a.button-block-color:active {
   height: 145px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .maker-card:hover,
@@ -419,12 +504,71 @@ a.button-block-color:active {
 }
 
 .options {
-  /* Описывает класс доп опций магазина*/
   background-color: #f4f7f9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+.options-container {
+  margin-top: 38px;
+  margin-left: 133px;
+  width: 420px;
+}
+
+.provider-options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 1200px;
+}
+
+.menu-options {
+  list-style: none;
+  margin-top: 14px;
+  padding: 20px;
+  list-style: none;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 0px;
+}
+
+.menu-options li {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #2c3e50;
+  background-color: #32425c;
+  color: #ffffff;
+  width: 240px;
+  height: 61px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-left: 21px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  margin-left: 130px;
+  box-shadow: 0px 1px 0 0, inset 0px 1px 0 0 #405069;
+}
+
+.menu-options a {
+  color: #ffffff;
+}
+
+.menu-options a:hover,
+.menu-options a:focus {
+  background-color: #293449;
+}
+
+.menu-options a:active {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .services-options {
-  /*Описывает заголовок секции */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -440,12 +584,28 @@ a.button-block-color:active {
   color: #32425c;
 }
 
-content-options {
+.content-options {
   /* Описание текста в секции*/
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  width: 275px;
+}
+
+.middle-container {
+  /*display: flex;
+  flex-direction: column;*/
+  margin-left: 80px;
+  margin-bottom: 135px;
+  position: relative;
+  z-index: 2;
+}
+
+.img-wrapper {
+  right: 130px;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -456,12 +616,31 @@ content-options {
   font-weight: 400;
 }
 
+.section-container {
+  display: flex;
+  width: 960px;
+  margin: auto;
+  margin-bottom: 86px;
+}
+
+.section-container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
 .section-content {
   /* Описывает оформление текста в секции*/
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  white-space: normal;
 }
 
 .delivery-services {
@@ -504,7 +683,9 @@ ul.delivery-services li:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 41px 25px 41px;
 }
+
 a.footer-logo:hover,
 a.footer-logo:focus {
   background-color: #ca2c37;
@@ -527,12 +708,14 @@ a.footer-logo:active {
   padding-left: 10px;
   flex-basis: 850px;
   margin-right: 130px;
+  padding-left: 0px;
 }
 
 .footer-links-top a {
   /* Описывает поведение первой строчки ссылок в футере*/
   color: #f1f5f7;
 }
+
 .footer-links-top a:hover,
 .footer-links-top a:focus {
   text-decoration: underline;
@@ -555,6 +738,9 @@ a.footer-logo:active {
   flex-basis: 745px;
   align-items: center;
   margin-right: 130px;
+  padding-left: 0px;
+  margin-left: 120px;
+  flex-shrink: 3;
 }
 
 .footer-links-bottom a {
@@ -580,9 +766,10 @@ a.footer-logo:active {
   font-weight: 400;
   padding-bottom: 5px;
   flex-wrap: nowrap;
-  flex-basis: 322px;
+  width: 322px;
   margin-left: 133px;
   min-height: 40px;
+  margin-top: 32px;
 }
 
 .footer-bottom {
@@ -646,6 +833,7 @@ a.footer-logo:active {
   flex-direction: row;
   flex-basis: 132px;
   margin-left: 169px;
+  margin-bottom: 30px;
 }
 
 .media-link {
@@ -665,10 +853,38 @@ a.footer-logo:active {
   background-color: #ee3643;
 }
 
+.slider-image-second {
+  display: none;
+}
+
 .text-slider {
   /* текс на слайдере*/
   position: relative;
   width: 100%;
+}
+
+.catalog-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 960px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 59px;
+  margin-bottom: 53px;
+}
+
+.catalog-container-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.catalog-container-slider {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: space-between;
 }
 
 .sign {
@@ -711,6 +927,10 @@ a.footer-logo:active {
   line-height: 18px;
   font-weight: 400;
   padding: 10px;
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-link:hover,
