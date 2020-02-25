@@ -1,3 +1,7 @@
+html * {
+  box-sizing: border-box;
+}
+
 .header-container {
   width: 1200px;
   margin: auto;
@@ -99,6 +103,11 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+  margin-left: 32px;
+}
+
+.button-catalog-wrapper {
+  display: flex;
 }
 
 .button-link {
@@ -141,12 +150,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 130px;
-}
-.buttons-catalog {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .button-header-wrapper {
@@ -325,7 +328,6 @@ a.button-block-color:active {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
 }
 
 .popular-card {
@@ -377,9 +379,10 @@ a.button-block-color:active {
   justify-content: space-between;
   margin-bottom: 21px;
   width: 960px;
-  margin-left: 130px;
+  margin: auto;
   margin-top: 21px;
   padding-left: 0px;
+  background-color: yellow;
 }
 
 .description-card {
@@ -387,10 +390,9 @@ a.button-block-color:active {
   width: 220px;
   min-height: 318px;
   border: 1px solid #eaeaea;
-  background-color: white;
-  margin-left: -10px;
-  margin-right: 10px;
-  margin-top: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-bottom: 21px;
 }
 
@@ -511,6 +513,9 @@ a.button-block-color:active {
   display: flex;
   flex-direction: column;
   margin-top: 85px;
+  margin-left: -130px;
+  width: 1200px;
+  
 }
 
 .options-container {
@@ -525,7 +530,6 @@ a.button-block-color:active {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 1200px;
 }
 
 .menu-options {
@@ -536,6 +540,7 @@ a.button-block-color:active {
   color: #ffffff;
   text-align: center;
   padding-left: 0px;
+  margin-bottom: 99px;
 }
 
 .menu-options li {
@@ -801,7 +806,7 @@ a.footer-logo:active {
   flex-basis: 35px;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 119px;
+
   color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
@@ -837,6 +842,7 @@ a.footer-logo:active {
   flex-basis: 132px;
   margin-left: 169px;
   margin-bottom: 30px;
+  padding-left: 0;
 }
 
 .media-link {
@@ -854,6 +860,12 @@ a.footer-logo:active {
 .media-link:focus,
 .media-link:active {
   background-color: #ee3643;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .slider-image-second {
@@ -973,20 +985,6 @@ a.footer-logo:active {
   margin-bottom: 73px;
 }
 
-.section-items {
-  background-color: #f2f6f8;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-left: 130px;
-  margin-right: 130px;
-  min-height: 89px;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-
 .page-number {
   font-weight: 400;
   margin-left: 20px;
@@ -1074,6 +1072,7 @@ a.footer-logo:active {
   width: 220px;
   display: flex;
   flex-direction: column;
+  background-color: grey;
 }
 
 .filter-price-wrap {
@@ -1081,18 +1080,21 @@ a.footer-logo:active {
   flex-direction: column;
   position: relative;
   top: -60px;
+  background-color: hotpink;
 }
 
 .filter-vendor-wrap {
   display: flex;
   flex-direction: column;
   margin-top: 54px;
+  background-color: indianred;
 }
 
 .filter-charger-wrap {
   margin-top: 54px;
   display: flex;
   flex-direction: column;
+  background-color: khaki;
 }
 
 .description-card-wrapper {
@@ -1104,11 +1106,112 @@ a.footer-logo:active {
   margin-right: 120px;
   padding-left: 0px;
   margin-left: 50px;
+  background-color: violet;
 }
 
-.one-big-flex {
+.description-card-wrapper li {
+  margin-right: 20px;
+  min-height: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-left: 130px;
+  align-items: stretch;
+}
+
+.description-card-wrapper li:nth-child(3n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.description-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-card .prices,
+.description-card h4 {
+  padding: 0 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.popular-it.description-card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 700px;
+  margin: 0;
+}
+
+.popular-it.description-card-wrapper li {
+  min-height: 100%;
+}
+
+.filters-container {
+  width: 220px;
+}
+
+.prices {
+  margin-top: auto;
+}
+
+main {
+  width: 940px;
+  margin: auto;
+}
+
+.catalog-list {
+  margin-left: 0;
+}
+
+.sort-wrapper {
+  margin-left: 0;
+}
+
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: lavender;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.catalog-header {
+  width: 100%;
+  background-color: #f2f6f8;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  
+}
+/*    нет в разметке html
+.catalog-filter-wrapper {
+  display: flex;
+  background-color: rgb(171, 240, 171);//TODO
+}
+*/
+.catalog fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 120, 120);
+  
+  
 }
