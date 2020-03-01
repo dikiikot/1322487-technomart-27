@@ -3,15 +3,17 @@ html * {
 }
 
 .header-container {
-  width: 1200px;
+  background-color: #f4f7f9;
+  width: auto;
   margin: auto;
 }
-.main-container {
-  width: 1200px;
+.catalog-main-wrapper-body-size {
+  width: 940px;
   margin: auto;
 }
+
 .footer-container {
-  width: 1200px;
+  width: auto;
   margin: auto;
 }
 
@@ -31,17 +33,25 @@ a {
   text-decoration: none;
 }
 
+.site-navigation-wrapper {
+  width: 1200px;
+  background-color: #32425c;
+}
+
 .site-navigation {
   display: flex;
   flex-direction: row;
   min-height: 42px;
-  width: 1200px;
+
   justify-content: space-between;
   margin-bottom: 46px;
   align-items: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .user-navigation {
@@ -52,8 +62,8 @@ a {
   padding-left: 30px;
 }
 .main-navigation {
-  margin-right: 130px;
-  margin-left: 130px;
+  width: 940px;
+  margin: auto;
 }
 .user-navigation {
   display: flex;
@@ -63,13 +73,13 @@ a {
   align-items: center;
 }
 
-.main-navigation,
-.site-navigation {
+.main-navigation {
   background-color: #32425c;
 }
 
 .main-header {
-  background-color: #f4f7f9;
+  width: 1200px;
+  margin: auto;
 }
 
 .user-navigation a,
@@ -131,9 +141,29 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.enter-icon{
+  position: relative ;
+}
+
+.enter-icon::before{
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-login.svg");
+  width: 20px;
+  height: 17px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+
+
+
+
 .header-info-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 940px;
+  margin: auto;
 }
 
 .contacts-wrapper {
@@ -154,7 +184,7 @@ a {
 
 .button-header-wrapper {
   display: flex;
-  margin-right: 130px;
+
   flex-basis: 271px;
   justify-content: space-around;
   align-items: center;
@@ -164,11 +194,13 @@ a {
   min-height: 47px;
   width: 220px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  margin-left: 130px;
+
   background-color: #ee3643;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -5px;
+  padding: 13px 0 18px 0;
 }
 
 a.main-header-logo:hover,
@@ -187,15 +219,33 @@ a.main-header-logo:active {
   font-style: italic;
   color: #ee3643;
   flex-basis: 196px;
-  margin-left: 183px;
+  margin-left: 55px;
 }
 
 .contacts {
   font-family: "Cuprum", Arial, sans-serif;
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
+  position: relative;
+  padding-left: 71px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  width: 270px;
+  min-height: 45px;
+}
+
+.contacts::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+  left: 15px;
 }
 
 .adress {
@@ -219,8 +269,21 @@ a.button-order:active {
   background-color: #518534;
 }
 
+.search::before {
+  content: "";
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -15px;
+  vertical-align: middle;
+  opacity: 0.3;
+}
+
 .search {
   color: #ffffff;
+  position: relative;
 }
 
 .search:hover {
@@ -320,7 +383,7 @@ a.button-block-color:active {
 }
 
 .popular-card-container {
-  width: 960px;
+  width: 940px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -371,22 +434,19 @@ a.button-block-color:active {
 }
 
 .popular-it {
-  /* Убирает точки у списка всех популярных товаров*/
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 21px;
-  width: 960px;
+  width: 940px;
   margin: auto;
   margin-top: 21px;
   padding-left: 0px;
-  background-color: yellow;
 }
 
 .description-card {
-  /* Карточка товара*/
   width: 220px;
   min-height: 318px;
   border: 1px solid #eaeaea;
@@ -394,6 +454,9 @@ a.button-block-color:active {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 21px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .description-card:hover {
@@ -451,8 +514,7 @@ a.button-block-color:active {
   display: block;
 }
 
-.top-price {
-  /* зачеркнутая цена */
+.old-price {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -462,8 +524,7 @@ a.button-block-color:active {
   text-decoration: line-through;
 }
 
-.bottom-price {
-  /* цена на красной кнопке*/
+.new-price {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -481,7 +542,7 @@ a.button-block-color:active {
   flex-wrap: wrap;
   margin: auto;
   align-items: center;
-  width: 960px;
+  width: 940px;
 }
 
 .maker-card {
@@ -509,19 +570,22 @@ a.button-block-color:active {
 }
 
 .options {
-  background-color: #f4f7f9;
   display: flex;
   flex-direction: column;
   margin-top: 85px;
-  margin-left: -130px;
-  width: 1200px;
-  
+  width: 940px;
+  margin: auto;
 }
 
 .options-container {
   margin-top: 38px;
-  margin-left: 133px;
   width: 420px;
+}
+.options-wrapper {
+  width: auto;
+  background-color: #f4f7f9;
+  margin: auto;
+  margin-top: 85px;
 }
 
 .provider-options-container {
@@ -529,7 +593,6 @@ a.button-block-color:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 .menu-options {
@@ -558,7 +621,7 @@ a.button-block-color:active {
   padding-left: 21px;
   padding-top: 21px;
   padding-bottom: 20px;
-  margin-left: 130px;
+
   box-shadow: 0px 1px 0 0, inset 0px 1px 0 0 #405069;
 }
 
@@ -626,7 +689,7 @@ a.button-block-color:active {
 
 .section-container {
   display: flex;
-  width: 960px;
+  width: 940px;
   margin: auto;
   margin-bottom: 86px;
 }
@@ -640,6 +703,7 @@ a.button-block-color:active {
   display: flex;
   flex-direction: column;
   margin-left: 60px;
+  margin-right: 20px;
 }
 
 .section-content {
@@ -673,20 +737,21 @@ ul.delivery-services li:before {
 }
 
 .footer-top {
-  /* Описывает верхнюю часть футера*/
   background-color: #32425c;
+  width: auto;
 }
 .footer-top-wrapper {
   display: flex;
   flex-direction: row;
+  width: 940px;
+  margin: auto;
 }
 
 .footer-logo {
-  /*Логотип футера */
   min-height: 47px;
   width: 220px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  margin-left: 130px;
+
   background-color: #ee3643;
   display: flex;
   align-items: center;
@@ -715,7 +780,7 @@ a.footer-logo:active {
   margin-left: 173px;
   padding-left: 10px;
   flex-basis: 850px;
-  margin-right: 130px;
+
   padding-left: 0px;
 }
 
@@ -745,10 +810,8 @@ a.footer-logo:active {
   font-weight: 400;
   flex-basis: 745px;
   align-items: center;
-  margin-right: 130px;
-  padding-left: 0px;
-  margin-left: 120px;
-  flex-shrink: 3;
+  margin-left: 91px;
+  flex-shrink: 5;
 }
 
 .footer-links-bottom a {
@@ -775,7 +838,6 @@ a.footer-logo:active {
   padding-bottom: 5px;
   flex-wrap: nowrap;
   width: 322px;
-  margin-left: 133px;
   min-height: 40px;
   margin-top: 32px;
 }
@@ -786,6 +848,12 @@ a.footer-logo:active {
   flex-direction: row;
   align-items: center;
   min-height: 107px;
+  width: 1200px;
+  margin: auto;
+}
+.footer-bottom-wrapper {
+  width: auto;
+  background-color: #293449;
 }
 
 .rules-protect {
@@ -865,7 +933,7 @@ a.footer-logo:active {
 .feedback-container {
   display: flex;
   justify-content: space-around;
-  margin: auto;
+  margin-left: 53px;
 }
 
 .slider-image-second {
@@ -881,7 +949,7 @@ a.footer-logo:active {
 .catalog-container {
   display: flex;
   flex-wrap: nowrap;
-  width: 960px;
+  width: 940px;
   justify-content: space-between;
   margin: auto;
   margin-top: 59px;
@@ -892,13 +960,11 @@ a.footer-logo:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 10px;
 }
 
 .catalog-container-slider {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
   justify-content: space-between;
 }
 
@@ -958,12 +1024,14 @@ a.footer-logo:active {
 }
 
 .product-info {
-  /* Задаем фон для секции */
-  background-color: #f4f7f9;
   display: flex;
   flex-direction: column;
-  padding-left: 130px;
-  padding-right: 159px;
+  margin: auto;
+  width: 940px;
+}
+
+.product-info-wrapper {
+  background-color: #f4f7f9;
 }
 
 .product-title {
@@ -987,9 +1055,12 @@ a.footer-logo:active {
 
 .page-number {
   font-weight: 400;
-  margin-left: 20px;
   margin-bottom: 60px;
-  margin-left: 359px;
+  margin-top: 52px;
+}
+
+.page-number a:first-child {
+  margin-left: 0px;
 }
 
 .page-numbers {
@@ -1020,18 +1091,11 @@ a.footer-logo:active {
   border: solid 1px #ee3643;
 }
 
-.sort {
-  background-color: #f7f3ec;
-  margin-top: 20px;
-}
-
 .sort-wrapper {
   background-color: #f7f3ec;
   width: 700px;
-  margin-left: 370px;
-
   min-height: 38px;
-  vertical-align: middle; //TODO
+  vertical-align: middle;
 }
 
 .sort-type {
@@ -1053,17 +1117,19 @@ a.footer-logo:active {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  margin: auto;
+  width: 940px;
 }
 
 .catalog-list {
+  /*  Каталог/ инструмент/ перфораторы*/
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 25px;
-  margin-left: 130px;
 }
+
 .catalog-list-items {
   margin: 25px; //TODO
 }
@@ -1073,13 +1139,13 @@ a.footer-logo:active {
   display: flex;
   flex-direction: column;
   background-color: grey;
+  margin-left: 0px;
 }
 
 .filter-price-wrap {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -60px;
   background-color: hotpink;
 }
 
@@ -1094,7 +1160,6 @@ a.footer-logo:active {
   margin-top: 54px;
   display: flex;
   flex-direction: column;
-  background-color: khaki;
 }
 
 .description-card-wrapper {
@@ -1103,10 +1168,8 @@ a.footer-logo:active {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-right: 120px;
   padding-left: 0px;
-  margin-left: 50px;
-  background-color: violet;
+  width: 700px;
 }
 
 .description-card-wrapper li {
@@ -1120,98 +1183,47 @@ a.footer-logo:active {
   margin-right: 0;
   margin-left: 0;
 }
-
-.description-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.description-card .prices,
+/ .description-card .prices,
 .description-card h4 {
   padding: 0 32px;
   text-align: center;
   box-sizing: border-box;
 }
-
-.popular-it.description-card-wrapper {
+/*
+ .popular-it.description-card-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
   width: 700px;
   margin: 0;
-}
+}*/
 
 .popular-it.description-card-wrapper li {
   min-height: 100%;
 }
 
-.filters-container {
-  width: 220px;
-}
-
-.prices {
-  margin-top: auto;
-}
-
-main {
-  width: 940px;
-  margin: auto;
-}
-
-.catalog-list {
-  margin-left: 0;
-}
-
-.sort-wrapper {
-  margin-left: 0;
-}
-
-.catalog-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  background-color: lavender;
-}
-
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: green;
-}
-
 .catalog-header {
+  /* Перфораторы - слово*/
   width: 100%;
   background-color: #f2f6f8;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  display: flex;
-  align-items: center;
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   line-height: 1;
   text-transform: uppercase;
-  
 }
-/*    нет в разметке html
+.catalog-rightside-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
 .catalog-filter-wrapper {
   display: flex;
-  background-color: rgb(171, 240, 171);//TODO
-}
-*/
-.catalog fieldset {
-  padding: 0;
-  margin: 0;
-}
-
-.catalog-filter {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(236, 120, 120);
-  
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
 }
