@@ -60,6 +60,7 @@ a {
   line-height: 17px;
   list-style: none;
   padding-left: 30px;
+  margin-top: 0px;
 }
 .main-navigation {
   width: 940px;
@@ -124,12 +125,13 @@ a {
   background-color: #ffffff;
   color: #000000;
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 21px;
   text-decoration: none;
   padding-top: 14px;
   padding-bottom: 15px;
   width: 121px;
   text-align: center;
+  min-height: 23px;
 }
 
 .button-link:hover,
@@ -141,11 +143,12 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.enter-icon{
-  position: relative ;
+.icon-login {
+  position: relative;
+  padding-left: 14px;
 }
 
-.enter-icon::before{
+.icon-login::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon-login.svg");
@@ -153,7 +156,16 @@ a {
   height: 17px;
   background-repeat: no-repeat;
   object-fit: contain;
+  left: 14px;
+  top: 17px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -161,6 +173,7 @@ a {
 
 .header-info-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 940px;
   margin: auto;
@@ -171,6 +184,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .header-wrapper-catalog {
@@ -184,7 +198,7 @@ a {
 
 .button-header-wrapper {
   display: flex;
-
+  margin-bottom: 33px;
   flex-basis: 271px;
   justify-content: space-around;
   align-items: center;
@@ -220,6 +234,7 @@ a.main-header-logo:active {
   color: #ee3643;
   flex-basis: 196px;
   margin-left: 55px;
+  margin-bottom: 44px;
 }
 
 .contacts {
@@ -229,11 +244,12 @@ a.main-header-logo:active {
   font-size: 21px;
   line-height: 21px;
   position: relative;
-  padding-left: 71px;
-  padding-top: 13px;
-  padding-bottom: 11px;
   width: 270px;
   min-height: 45px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  text-align: center;
+  
 }
 
 .contacts::before {
@@ -245,7 +261,11 @@ a.main-header-logo:active {
   width: 19px;
   height: 19px;
   object-fit: contain;
+  overflow: auto;
   left: 15px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
 }
 
 .adress {
@@ -253,6 +273,8 @@ a.main-header-logo:active {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 22px;
+  
 }
 
 .button-order {
@@ -309,6 +331,9 @@ a.button-order:active {
 .button-block-color {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  vertical-align: middle;
   line-height: 18px;
   width: 135px;
   height: 38px;
@@ -318,6 +343,8 @@ a.button-order:active {
   top: 63px;
   text-align: center;
   color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 14px;
 }
 
 a.button-block-color:hover,
@@ -342,18 +369,34 @@ a.button-block-color:active {
   text-align: left;
   display: block;
   position: relative;
-  background-image: url("../img/icon-bucket.png");
-  background-repeat: no-repeat;
-  background-size: 44px 65px;
-  background-position-x: 189px;
-  background-position-y: 30px;
   margin-bottom: 20px;
+  
+
+
+
+
+
+
 }
+
+
+.description-features-span{
+  position: absolute;
+  top: 26px;
+  left: 23px;
+}
+
 
 .bgcolor-orange {
   position: relative;
   background-color: #ffbf47;
   width: 300px;
+  background-image: url("../img/icon-bucket.png");
+  background-repeat: no-repeat;
+  background-size: 44px 65px;
+  background-position-x: 213px;
+  background-position-y: 31px;
+  
 }
 
 .bgcolor-blue {
@@ -361,12 +404,23 @@ a.button-block-color:active {
   background-color: #3bbce3;
   width: 300px;
   margin-right: 20px;
+background-image: url("../img/icon-2.png");
+background-repeat: no-repeat;
+background-size: 75px 61px;
+background-position-x: 197px;
+background-position-y: 33px;
+
 }
 
 .bgcolor-violet {
   position: relative;
   background-color: #dc91d8;
   width: 300px;
+  background-image: url("../img/icon-3.png");
+  background-repeat: no-repeat;
+  background-size: 78px 62px;
+  background-position-x: 191px;
+  background-position-y: 31px;
 }
 
 .bgcolor-green {
@@ -374,12 +428,23 @@ a.button-block-color:active {
   background-color: #8ed78f;
   width: 300px;
   margin-top: 10px;
+background-image: url("../img/icon-4.png");
+background-repeat: no-repeat;
+background-size: 59px  72px;
+background-position-x: 196px;
+background-position-y: 26px;
 }
 
 .bgcolor-pale {
   position: relative;
   background-color: #ffc047;
   width: 300px;
+  background-image: url("../img/icon-5.png");
+  background-repeat: no-repeat;
+  background-size: 78px 63px;
+  background-position-x: 191px;
+  background-position-y: 32px;
+
 }
 
 .popular-card-container {
@@ -968,50 +1033,79 @@ a.footer-logo:active {
   justify-content: space-between;
 }
 
+
+
+
 .sign {
-  /*Первая надпись на слайдере */
   position: absolute;
   width: 100%;
-  left: 20px;
-  top: 30px;
+  left: 24px;
+  top: 27px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
   text-align: left;
   color: #ffffff;
+  text-transform: uppercase;
+  
 }
 
 .sign-bottom {
-  /* Вторая надпись на слайдере */
   position: absolute;
   width: 100%;
-  left: 20px;
-  top: 60px;
+  left: 25px;
+  top: 65px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   text-align: left;
   font-weight: 400;
   color: #ffffff;
   line-height: 24px;
+  margin-top: 0px;
 }
+.sign::before{
+content: "";
+position: absolute;
+background-image: url("../img/icon-left.svg");
+width: 22px;
+height: 40px;
+left: 0px;
+top: 85px;
+
+}
+
+.sign::after{
+content: "";
+position: absolute;
+background-image: url("../img/icon-right.svg");
+width: 22px;
+height: 40px;
+top: 85px;
+left: 558px;
+
+}
+
+
+
+
 
 .slider-link {
   /*  Цветная кнопка на слайдере */
   position: absolute;
-  top: 220px;
-  left: 20px;
+  top: 206px;
+  left: 25px;
   color: #ffffff;
   background-color: #ee3643;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
   padding: 10px;
   width: 195px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .slider-link:hover,
@@ -1022,6 +1116,17 @@ a.footer-logo:active {
 .slider-link:active {
   background-color: #ba2732;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .product-info {
   display: flex;
