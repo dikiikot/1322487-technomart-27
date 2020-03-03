@@ -39,19 +39,85 @@ a {
 }
 
 .site-navigation {
+  width: 940px;
+  background-color: #293449;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   min-height: 42px;
-
-  justify-content: space-between;
-  margin-bottom: 46px;
-  align-items: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  width: 940px;
   margin-right: auto;
   margin-left: auto;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.button-site-navigation {
+  display: block;
+  padding-bottom: 13px;
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-left: 50px;
+}
+.button-site-navigation:hover,
+.button-site-navigation:focus {
+  background-color: #212a3a;
+}
+
+.button-site-navigation:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+.icon-bookmark {
+  position: relative;
+}
+
+.icon-bookmark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 16px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.icon-bookmark:hover::before,
+.icon-bookmark:focus::before {
+  opacity: 1;
+}
+
+.icon-bookmark:active::before {
+  opacity: 0.5;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  left: 18px;
+  opacity: 0.3;
+}
+
+.cart-icon:hover::before,
+.cart-icon:focus::before {
+  opacity: 1;
+}
+
+.cart-icon:active::before {
+  opacity: 0.5;
 }
 
 .user-navigation {
@@ -59,23 +125,33 @@ a {
   font-size: 17px;
   line-height: 17px;
   list-style: none;
-  padding-left: 30px;
+  padding-left: 0px;
   margin-top: 0px;
-}
-.main-navigation {
-  width: 940px;
-  margin: auto;
-}
-.user-navigation {
   display: flex;
   min-height: 60px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+.user-navigation a {
+  padding-top: 21px;
+  padding-bottom: 24px;
+  justify-content: center;
+}
 
 .main-navigation {
+  width: 940px;
+  margin: auto;
   background-color: #32425c;
+}
+
+.user-navigation a {
+  display: flex;
+}
+
+.user-navigation li {
+  flex-grow: 3;
+  align-content: center;
 }
 
 .main-header {
@@ -87,12 +163,18 @@ a {
 .site-navigation a {
   color: #ffffff;
 }
-
-.site-navigation a:hover,
-.site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #1d2739;
+}
+.user-navigation a:active {
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #212a3a;
 }
 
 .name-form {
@@ -143,33 +225,19 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.button-link:hover path,
+.button-link:focus path {
+  fill: #293449;
+}
+
+.button-link:active path {
+  fill: #c5c5c5;
+}
+
 .icon-login {
   position: relative;
   padding-left: 14px;
 }
-
-.icon-login::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-login.svg");
-  width: 20px;
-  height: 17px;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  left: 14px;
-  top: 17px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .header-info-wrapper {
   display: flex;
@@ -248,8 +316,9 @@ a.main-header-logo:active {
   min-height: 45px;
   padding-top: 4px;
   padding-bottom: 3px;
-  text-align: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts::before {
@@ -274,12 +343,15 @@ a.main-header-logo:active {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 22px;
-  
 }
 
-.button-order {
-  margin-right: 130px;
+a.button-order {
+  display: block;
   background-color: #63a63e;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 a.button-order:hover,
@@ -291,21 +363,22 @@ a.button-order:active {
   background-color: #518534;
 }
 
-.search::before {
-  content: "";
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: -15px;
-  vertical-align: middle;
-  opacity: 0.3;
-}
+
+
+
+
+
+
+
+
+
 
 .search {
   color: #ffffff;
   position: relative;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  
 }
 
 .search:hover {
@@ -315,6 +388,53 @@ a.button-order:active {
 .search:focus {
   background-color: #ffffff;
 }
+
+.search path {
+  opacity: 0.3;
+}
+
+.search:hover path,
+.search:focus path {
+  opacity: 1;
+}
+
+.search:active path {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+input, textarea{
+  
+  background-color: #293449;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  border-style: none;
+  
+}
+
+input[type="search"]:hover
+
+{
+background-color:#212a3a;
+}
+
+input[type="search"]:focus{
+  background-color: #ffffff;
+}
+
+
+input[type="search"]:active{
+  background-color: #ffffff;
+}
+
+
+
+
+
 
 .visually-hidden {
   display: none;
@@ -370,33 +490,23 @@ a.button-block-color:active {
   display: block;
   position: relative;
   margin-bottom: 20px;
-  
-
-
-
-
-
-
 }
 
-
-.description-features-span{
+.description-features-span {
   position: absolute;
   top: 26px;
   left: 23px;
 }
 
-
 .bgcolor-orange {
   position: relative;
   background-color: #ffbf47;
   width: 300px;
-  background-image: url("../img/icon-bucket.png");
-  background-repeat: no-repeat;
-  background-size: 44px 65px;
-  background-position-x: 213px;
-  background-position-y: 31px;
-  
+  background-image: url("../img/icon-bucket.png"), url("../img/new-flag.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 44px 65px, 60px 59px;
+  background-position-x: 213px, 240px;
+  background-position-y: 31px, 0px;
 }
 
 .bgcolor-blue {
@@ -404,12 +514,11 @@ a.button-block-color:active {
   background-color: #3bbce3;
   width: 300px;
   margin-right: 20px;
-background-image: url("../img/icon-2.png");
-background-repeat: no-repeat;
-background-size: 75px 61px;
-background-position-x: 197px;
-background-position-y: 33px;
-
+  background-image: url("../img/icon-2.png");
+  background-repeat: no-repeat;
+  background-size: 75px 61px;
+  background-position-x: 197px;
+  background-position-y: 33px;
 }
 
 .bgcolor-violet {
@@ -428,11 +537,11 @@ background-position-y: 33px;
   background-color: #8ed78f;
   width: 300px;
   margin-top: 10px;
-background-image: url("../img/icon-4.png");
-background-repeat: no-repeat;
-background-size: 59px  72px;
-background-position-x: 196px;
-background-position-y: 26px;
+  background-image: url("../img/icon-4.png");
+  background-repeat: no-repeat;
+  background-size: 59px 72px;
+  background-position-x: 196px;
+  background-position-y: 26px;
 }
 
 .bgcolor-pale {
@@ -444,7 +553,6 @@ background-position-y: 26px;
   background-size: 78px 63px;
   background-position-x: 191px;
   background-position-y: 32px;
-
 }
 
 .popular-card-container {
@@ -487,6 +595,7 @@ background-position-y: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .buttonred:hover,
@@ -551,7 +660,7 @@ background-position-y: 26px;
   line-height: 18px;
   color: rgb(0, 0, 0);
   text-align: center;
-  display: block;
+  display: none;
   list-style: none;
 }
 
@@ -1033,9 +1142,6 @@ a.footer-logo:active {
   justify-content: space-between;
 }
 
-
-
-
 .sign {
   position: absolute;
   width: 100%;
@@ -1048,7 +1154,6 @@ a.footer-logo:active {
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
-  
 }
 
 .sign-bottom {
@@ -1064,31 +1169,25 @@ a.footer-logo:active {
   line-height: 24px;
   margin-top: 0px;
 }
-.sign::before{
-content: "";
-position: absolute;
-background-image: url("../img/icon-left.svg");
-width: 22px;
-height: 40px;
-left: 0px;
-top: 85px;
-
+.sign::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-left.svg");
+  width: 22px;
+  height: 40px;
+  left: 0px;
+  top: 85px;
 }
 
-.sign::after{
-content: "";
-position: absolute;
-background-image: url("../img/icon-right.svg");
-width: 22px;
-height: 40px;
-top: 85px;
-left: 558px;
-
+.sign::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-right.svg");
+  width: 22px;
+  height: 40px;
+  top: 85px;
+  left: 558px;
 }
-
-
-
-
 
 .slider-link {
   /*  Цветная кнопка на слайдере */
@@ -1105,7 +1204,6 @@ left: 558px;
   text-transform: uppercase;
   padding: 10px;
   width: 195px;
-  
 }
 
 .slider-link:hover,
@@ -1116,17 +1214,6 @@ left: 558px;
 .slider-link:active {
   background-color: #ba2732;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .product-info {
   display: flex;
