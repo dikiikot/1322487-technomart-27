@@ -363,78 +363,74 @@ a.button-order:active {
   background-color: #518534;
 }
 
-
-
-
-
-
-
-
-
-
-
-.search {
-  color: #ffffff;
-  position: relative;
-  padding-top: 14px;
-  padding-bottom: 13px;
-  
-}
-
-.search:hover {
-  background-color: #212a3a;
-}
-
-.search:focus {
-  background-color: #ffffff;
-}
-
 .search path {
   opacity: 0.3;
 }
 
-.search:hover path,
-.search:focus path {
+.search:hover path {
   opacity: 1;
 }
 
-.search:active path {
-  opacity: 0.5;
+.form-container {
+  margin-left: -17px;
 }
 
+.form-container:hover {
+  background-color: #212a3a;
+}
+.form-container:hover path {
+  opacity: 1;
+}
 
+.form-container:focus-within {
+  background-color: #ffffff;
+}
+.form-container:focus-within path {
+  fill: #ee3643;
+  opacity: 1;
+}
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
 
-
-
-input, textarea{
-  
+input,
+textarea {
   background-color: #293449;
   padding-top: 14px;
   padding-bottom: 13px;
-  border-style: none;
-  
+  border: none;
+  padding-left: 15px;
 }
 
-input[type="search"]:hover
-
-{
-background-color:#212a3a;
+input[type="search"]:hover {
+  background-color: #212a3a;
 }
 
-input[type="search"]:focus{
+input[type="search"]:focus {
   background-color: #ffffff;
 }
 
-
-input[type="search"]:active{
+input[type="search"]:active {
   background-color: #ffffff;
 }
 
-
-
-
-
+input[type="search"]::-moz-placeholder {
+  color: #ffffff;
+}
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+input[type="search"]:-ms-input-placeholder {
+  color: #ffffff;
+}
+input[type="search"]::-ms-input-placeholder {
+  color: #ffffff;
+}
+input[type="search"]::placeholder {
+  color: #ffffff;
+}
 
 .visually-hidden {
   display: none;
@@ -469,13 +465,12 @@ input[type="search"]:active{
 
 a.button-block-color:hover,
 a.button-block-color:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
 
 a.button-block-color:active {
-  background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .block-color {
@@ -626,11 +621,13 @@ a.button-block-color:active {
   border: 1px solid #eaeaea;
 
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-bottom: 21px;
 
   display: flex;
   flex-direction: column;
+  position: relative;
+  
 }
 
 .description-card:hover {
@@ -639,52 +636,77 @@ a.button-block-color:active {
 }
 
 .catalog-items {
-  /* Описание товара в карточке товара*/
+  
   font-family: "PTSans", Arial, sans-serif;
   line-height: 20px;
   font-size: 18px;
   font-weight: 700;
-  padding: 10px;
   text-align: center;
   vertical-align: top;
-  padding-top: 0px;
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-/* Вот тут надо было классы сделать на цены, я решил обойтись псевдоклассами
-чтобы не прописывать на каждой карточке,  в результате сейчас например, не работает цвет на ссылке*/
-/* я специально сейчас сделал display:block, чтобы отремонтировать эту часть кода*/
-.link-card li {
-  /* Всплывающие ссылки купить и  в  закладки  */
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  display: none;
-  list-style: none;
-}
-
-.link-card li:first-child:hover,
-.link-card li:first-child:focus {
+.buy:hover,
+.buy:first-child:focus {
   background-color: #5fbb2d;
   color: #000000;
 }
 
-.link-card li:first-child:active {
+.buy:first-child:active {
   background-color: #518534;
 }
 
-.link-card li:last-child:hover,
-.link-card li:last-child:focus {
+.bookmarks:hover,
+.bookmarks:focus {
   border: solid 3px #32425c;
 }
 
-.link-card li:last-child:active {
+.bookmarks:last-child:active {
   opacity: 0.3;
   border: solid 3px #32425c;
 }
 
-.test1:hover .test2 {
+.buy,
+.bookmarks {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.bookmarks {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.actions {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.99);
+  width: 218px;
+  padding: 40px 0;
+}
+
+.description-card:hover .actions {
   display: block;
 }
 
@@ -696,6 +718,9 @@ a.button-block-color:active {
   color: #a9a9a9;
   text-align: center;
   text-decoration: line-through;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  min-height: 20px;
 }
 
 .new-price {
@@ -703,12 +728,28 @@ a.button-block-color:active {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  color: #000000;
-  text-align: center;
-  background-image: url("../img/red-button.png");
-  vertical-align: bottom;
-  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 10px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
 }
+
+ .new-price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -17px;
+  width: 0;
+  height: 0;
+  border: 19px solid white;
+  border-left-color: #ee3643;
+ }
+
 .maker-card-wrapper {
   display: flex;
   flex-direction: row;
@@ -780,23 +821,21 @@ a.button-block-color:active {
   margin-bottom: 99px;
 }
 
-.menu-options li {
+.menu-options a {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #2c3e50;
+
   background-color: #32425c;
   color: #ffffff;
   width: 240px;
-  height: 61px;
+  padding-top: 21px;
+  padding-bottom: 20px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 30px;
   padding-left: 21px;
-  padding-top: 21px;
-  padding-bottom: 20px;
-
-  box-shadow: 0px 1px 0 0, inset 0px 1px 0 0 #405069;
+  box-shadow: inset 0px 1px 0 0 #405069;
 }
 
 .menu-options a {
@@ -811,6 +850,11 @@ a.button-block-color:active {
 .menu-options a:active {
   background-color: #ffffff;
   color: #000000;
+}
+.menu-options .active a {
+  color: #32425c;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0 0 #ffffff;
 }
 
 .services-options {
@@ -908,6 +952,11 @@ ul.delivery-services li:before {
   left: -5px;
   color: #ee3643;
   font-weight: 700;
+}
+
+.delivery-services li {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .footer-top {
