@@ -127,6 +127,7 @@ a {
   list-style: none;
   padding-left: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
   display: flex;
   min-height: 60px;
   flex-direction: row;
@@ -183,10 +184,25 @@ a {
   font-weight: 400;
   line-height: 21px;
   color: #000000;
+  background-color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-right: 49px ;
+  padding-left: 27px ;
+  margin-bottom: 10px;
 }
 
 .name-form:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.name-form:hover path,
+.name-form:focus path{
+  fill: #293449;
+}
+
+.name-form:active path{
+  fill: #c5c5c5;
 }
 
 .button-link-catalog {
@@ -196,11 +212,25 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
-  margin-left: 32px;
+  
+}
+.button-link-catalog:hover,
+.button-link-catalog:focus{
+  color: #ee3643;
+}
+
+.button-link-catalog:active{
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .button-catalog-wrapper {
   display: flex;
+  margin-bottom: 13px;
+  justify-content: space-around;
+  width: 100%;
+  
+  
+  
 }
 
 .button-link {
@@ -261,7 +291,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-right: 130px;
+  
 }
 
 .button-header-wrapper {
@@ -562,7 +592,7 @@ a.button-block-color:active {
 }
 
 .popular-card {
-  /* Выделение популярных товаров  и производителей*/
+  
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
   font-size: 30px;
@@ -574,6 +604,10 @@ a.button-block-color:active {
   display: inline;
 }
 
+.right-container {
+  margin-top: 40px;
+}
+
 .buttonred {
   /* Красные кнопки*/
   font-family: "Cuprum", Arial, sans-serif;
@@ -582,10 +616,10 @@ a.button-block-color:active {
   font-size: 14px;
   line-height: 18px;
   width: 253px;
-  height: 38px;
+  min-height: 38px;
   text-align: center;
   margin-right: 24px;
-  margin-top: 25px;
+
   margin-bottom: 26px;
   display: flex;
   justify-content: center;
@@ -627,7 +661,6 @@ a.button-block-color:active {
   display: flex;
   flex-direction: column;
   position: relative;
-  
 }
 
 .description-card:hover {
@@ -636,7 +669,6 @@ a.button-block-color:active {
 }
 
 .catalog-items {
-  
   font-family: "PTSans", Arial, sans-serif;
   line-height: 20px;
   font-size: 18px;
@@ -739,7 +771,7 @@ a.button-block-color:active {
   border-radius: 3px;
 }
 
- .new-price:after {
+.new-price:after {
   content: "";
   position: absolute;
   top: 0;
@@ -748,7 +780,7 @@ a.button-block-color:active {
   height: 0;
   border: 19px solid white;
   border-left-color: #ee3643;
- }
+}
 
 .maker-card-wrapper {
   display: flex;
@@ -910,6 +942,7 @@ a.button-block-color:active {
   width: 940px;
   margin: auto;
   margin-bottom: 86px;
+  margin-top: 82px;
 }
 
 .section-container-left {
@@ -939,6 +972,8 @@ a.button-block-color:active {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul.delivery-services {
@@ -947,7 +982,7 @@ ul.delivery-services {
 }
 
 ul.delivery-services li:before {
-  content: "—";
+  content: "-";
   position: relative;
   left: -5px;
   color: #ee3643;
@@ -1363,17 +1398,87 @@ a.footer-logo:active {
 }
 
 .catalog-list {
-  /*  Каталог/ инструмент/ перфораторы*/
+  margin-top: 25px;
+  margin-bottom: 25px;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  padding: 0;
+  
+  
+}
+.catalog-list::before{
+  content: "";
+  background-image: url("../img/icon-home.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 12px;
+  object-fit: contain;
+  overflow: auto;
+  
+
+}
+.catalog-list li{
+  margin-left: 39px;
+}
+.catalog-list li:first-child{
+  margin-left: 55px;
 }
 
 .catalog-list-items {
-  margin: 25px; //TODO
+  
+  position: relative;
 }
+.items-first{
+  position: relative;
+}
+.items-first::before{
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  left: -18px;
+  top: 6px;
+  
+}
+
+.items-second{
+  position: relative;
+}
+.items-second::before{
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  left: -18px;
+  top: 6px;
+  
+}
+
+.items-third{
+  position: relative;
+}
+.items-third::before{
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  left: -18px;
+  top: 6px;
+  
+}
+
+
 
 .filters-container {
   width: 220px;
@@ -1381,6 +1486,7 @@ a.footer-logo:active {
   flex-direction: column;
   background-color: grey;
   margin-left: 0px;
+  position: relative;
 }
 
 .filter-price-wrap {
@@ -1424,20 +1530,13 @@ a.footer-logo:active {
   margin-right: 0;
   margin-left: 0;
 }
-/ .description-card .prices,
+.description-card .prices,
 .description-card h4 {
   padding: 0 32px;
   text-align: center;
   box-sizing: border-box;
 }
-/*
- .popular-it.description-card-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 700px;
-  margin: 0;
-}*/
+
 
 .popular-it.description-card-wrapper li {
   min-height: 100%;
@@ -1456,6 +1555,7 @@ a.footer-logo:active {
   padding-bottom: 30px;
   line-height: 1;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 .catalog-rightside-wrapper {
   display: flex;
