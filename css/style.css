@@ -187,8 +187,8 @@ a {
   background-color: #ffffff;
   padding-top: 14px;
   padding-bottom: 11px;
-  padding-right: 49px ;
-  padding-left: 27px ;
+  padding-right: 49px;
+  padding-left: 27px;
   margin-bottom: 10px;
 }
 
@@ -197,11 +197,11 @@ a {
 }
 
 .name-form:hover path,
-.name-form:focus path{
+.name-form:focus path {
   fill: #293449;
 }
 
-.name-form:active path{
+.name-form:active path {
   fill: #c5c5c5;
 }
 
@@ -212,14 +212,13 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
-  
 }
 .button-link-catalog:hover,
-.button-link-catalog:focus{
+.button-link-catalog:focus {
   color: #ee3643;
 }
 
-.button-link-catalog:active{
+.button-link-catalog:active {
   color: rgba(50, 66, 92, 0.3);
 }
 
@@ -228,9 +227,6 @@ a {
   margin-bottom: 13px;
   justify-content: space-around;
   width: 100%;
-  
-  
-  
 }
 
 .button-link {
@@ -291,7 +287,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 
 .button-header-wrapper {
@@ -592,7 +587,6 @@ a.button-block-color:active {
 }
 
 .popular-card {
-  
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 30px;
   font-size: 30px;
@@ -1371,7 +1365,11 @@ a.footer-logo:active {
   background-color: #f7f3ec;
   width: 700px;
   min-height: 38px;
-  vertical-align: middle;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 19px;
 }
 
 .sort-type {
@@ -1407,10 +1405,8 @@ a.footer-logo:active {
   align-items: center;
   position: relative;
   padding: 0;
-  
-  
 }
-.catalog-list::before{
+.catalog-list::before {
   content: "";
   background-image: url("../img/icon-home.svg");
   position: absolute;
@@ -1419,24 +1415,21 @@ a.footer-logo:active {
   height: 12px;
   object-fit: contain;
   overflow: auto;
-  
-
 }
-.catalog-list li{
+.catalog-list li {
   margin-left: 39px;
 }
-.catalog-list li:first-child{
+.catalog-list li:first-child {
   margin-left: 55px;
 }
 
 .catalog-list-items {
-  
   position: relative;
 }
-.items-first{
+.items-first {
   position: relative;
 }
-.items-first::before{
+.items-first::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon-right-small.svg");
@@ -1445,13 +1438,12 @@ a.footer-logo:active {
   height: 12px;
   left: -18px;
   top: 6px;
-  
 }
 
-.items-second{
+.items-second {
   position: relative;
 }
-.items-second::before{
+.items-second::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon-right-small.svg");
@@ -1460,13 +1452,12 @@ a.footer-logo:active {
   height: 12px;
   left: -18px;
   top: 6px;
-  
 }
 
-.items-third{
+.items-third {
   position: relative;
 }
-.items-third::before{
+.items-third::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon-right-small.svg");
@@ -1475,38 +1466,36 @@ a.footer-logo:active {
   height: 12px;
   left: -18px;
   top: 6px;
-  
 }
-
-
 
 .filters-container {
   width: 220px;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+
   margin-left: 0px;
   position: relative;
 }
 
-.filter-price-wrap {
+.filter-price-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: hotpink;
+  background-color: rgb(247, 221, 221);
 }
 
-.filter-vendor-wrap {
+.filter-vendor-container {
   display: flex;
   flex-direction: column;
   margin-top: 54px;
-  background-color: indianred;
+  background-color: rgb(204, 250, 202);
 }
 
-.filter-charger-wrap {
+.filter-charger-container {
   margin-top: 54px;
   display: flex;
   flex-direction: column;
+  background-color: rgb(230, 220, 245);
 }
 
 .description-card-wrapper {
@@ -1537,7 +1526,6 @@ a.footer-logo:active {
   box-sizing: border-box;
 }
 
-
 .popular-it.description-card-wrapper li {
   min-height: 100%;
 }
@@ -1567,4 +1555,32 @@ a.footer-logo:active {
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
+}
+
+.filter-container-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  margin-left: -10px;
+}
+.filter-container-title {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.filter-title {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: 400;
+  padding-left: 18px;
+}
+
+.filter-button{
+
 }
