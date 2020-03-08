@@ -98,118 +98,55 @@
          </h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
          <div class="catalog-filter-wrapper">
             <form class="filters-container" action="https://echo.htmlacademy.ru" method="GET">
                <p class="filter-title">Фильтр:</p>
                <div class="filter-price-container">
-
-
-
                   <fieldset class="filter-item">
-                     <legend> Цена:</legend>
+                     <legend class="filter-container-title"> Цена:</legend>
                      <div class="range-filter">
                         <div class="range-controls">
                            <div class="scale">
-                              <div class="bar"></div>
+                              <div class="bar" style="margin-left: 0%; width: 80%"></div>
                            </div>
                            <div class="toggle toggle-min"></div>
                            <div class="toggle toggle-max"></div>
                         </div>
                         <div class="price-controls">
-                           <label class="min-price">от <input name="min-price" type="number" value="0"></label>
-                           <label class="max-price">до <input name="max-price" type="number" value="30000"></label>
+                           <label class="min-price"> <input name="min-price" type="number" value="0"></label>
+                           <label class="max-price"> <input name="max-price" type="number" value="30000"></label>
                         </div>
                      </div>
                   </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <!-- Cтили не перекрылись в css^ 
-fieldset и legend надо соединить,, на них завязка  флексов
-
-                  <fieldset class="filter-container-style" style="border:0px;">
-                     <legend class="filter-container-title">Цена</legend>
-                     <input type="range" id="price" min="0" max="30000" step="500">
-                     <div>
-                        <input type="number" value="0" name="min">
-                        <input type="number" value="30000" name="max">
-                     </div>
-                  </fieldset>
-               -->
-
-
-
-
-
-
-
-
-
-
-
-
                </div>
-
-
-
-
-
-
-
-
                <div class="filter-vendor-container">
                   <fieldset class="filter-container-style" style="border: 0px;">
                      <legend class="filter-container-title">Производители:</legend>
 
-                     <label class="check" for="Bosch">
+                     <label class="check filter-vendor-style" for="Bosch">
                         <input class="checkbox-input" type="checkbox" name="Производители" value="BOSCH" id="Bosch"
                            checked />
                         <span class="checkbox-icon"></span>
                         BOSCH
                      </label>
-                     <label class="check" for="Интерскол">
+                     <label class="check filter-vendor-style" for="Интерскол">
                         <input class="checkbox-input" type="checkbox" name="Производители" value="Интерскол"
                            id="Интерскол" />
                         <span class="checkbox-icon"></span>
                         Интерскол
                      </label>
-                     <label class="check" for="Makita">
+                     <label class="check filter-vendor-style" for="Makita">
                         <input class="checkbox-input" type="checkbox" name="Производители" value="Makita" id="Makita"
                            checked />
                         <span class="checkbox-icon"></span>
                         Makita
                      </label>
-                     <label class="check" for="DeWalt">
+                     <label class="check filter-vendor-style" for="DeWalt">
                         <input class="checkbox-input" type="checkbox" name="Производители" value="DeWalt" id="DeWalt" />
                         <span class="checkbox-icon"></span>
                         DeWalt
                      </label>
-                     <label class="check" for="Hitachi">
+                     <label class="check filter-vendor-style" for="Hitachi">
                         <input class="checkbox-input" type="checkbox" name="Производители" value="Hitachi"
                            id="Hitachi" />
                         <span class="checkbox-icon"></span>
@@ -227,16 +164,16 @@ fieldset и legend надо соединить,, на них завязка  ф�
 
 
                <div class="filter-charger-container">
-                  <fieldset class="filter-container-style" style="border: 0px;">
+                  <fieldset class="filter-container-style test444" style="border: 0px;">
 
-                     <legend class="filter-container-title">Питание:</legend>
+                     <legend class="filter-container-title ">Питание:</legend>
 
-                     <label class="radio">
+                     <label class="radio filter-charger-style">
                         <input class="radio-input" type="radio" name="Питание" value="Аккумуляторные" checked />
                         <span class="radio-icon"></span>
                         Аккумуляторные
                      </label>
-                     <label class="radio">
+                     <label class="radio filter-charger-style">
 
                         <input class="radio-input" type="radio" name="Питание" value="Сетевые" />
                         <span class="radio-icon"></span>
@@ -280,10 +217,12 @@ fieldset и legend надо соединить,, на них завязка  ф�
 
 
                   <div class="sort-type-arrows">
-                     <a class="sort-type-arrows-style" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                     <a class="sort-type-arrows-style" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                           height="10" viewBox="0 0 11 10">
                            <path fill="#231F20" d="M5.5 0L0 10h11z" />
                         </svg></a>
-                     <a class="sort-type-arrows-style" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                     <a class="sort-type-arrows-style" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11"
+                           height="10" viewBox="0 0 11 10">
                            <path fill="#231F20" d="M5.5 10L0 0h11" />
                         </svg></a>
                   </div>
