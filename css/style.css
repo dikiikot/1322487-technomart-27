@@ -129,11 +129,16 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  min-height: 60px;
+  min-height: 62px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
+.header-indent {
+  min-height: 60px;
+}
+
 .user-navigation a {
   padding-top: 21px;
   padding-bottom: 24px;
@@ -185,11 +190,12 @@ a {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 49px;
   padding-left: 27px;
-  margin-bottom: 10px;
+  
+  position: relative;
 }
 
 .name-form:active {
@@ -202,6 +208,20 @@ a {
 }
 
 .name-form:active path {
+  fill: #c5c5c5;
+}
+
+.name-form-link {
+  position: absolute;
+  right: 20px;
+  top: 11px;
+}
+
+.name-form-link:hover path,
+.name-form-link:focus path {
+  fill: #293449;
+}
+.name-form-link:active path {
   fill: #c5c5c5;
 }
 
@@ -224,7 +244,7 @@ a {
 
 .button-catalog-wrapper {
   display: flex;
-  margin-bottom: 13px;
+  margin-top: 10px;
   justify-content: space-around;
   width: 100%;
 }
@@ -271,6 +291,7 @@ a {
   justify-content: space-between;
   width: 940px;
   margin: auto;
+  align-items: flex-start;
 }
 
 .contacts-wrapper {
@@ -287,6 +308,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .button-header-wrapper {
@@ -328,6 +350,7 @@ a.main-header-logo:active {
   flex-basis: 196px;
   margin-left: 55px;
   margin-bottom: 44px;
+  margin-top: 0px;
 }
 
 .contacts {
@@ -367,7 +390,8 @@ a.main-header-logo:active {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 22px;
+  margin-top: 6px;
+  
 }
 
 a.button-order {
@@ -641,6 +665,21 @@ a.button-block-color:active {
   margin: auto;
   margin-top: 21px;
   padding-left: 0px;
+}
+
+.flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .description-card {
@@ -1164,6 +1203,9 @@ a.footer-logo:active {
   margin-bottom: 30px;
   padding-left: 0;
 }
+.media li {
+  margin-right: 3px;
+}
 
 .media-link {
   /* Стилизует медиа иконки */
@@ -1370,6 +1412,11 @@ a.footer-logo:active {
   align-items: center;
   justify-content: space-between;
   padding-left: 19px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  font-weight: 400;
 }
 
 .sort-type {
@@ -1385,7 +1432,37 @@ a.footer-logo:active {
 
 .sort-type:active {
   color: #ee3643;
+  border-bottom: 1px solid #f7f3ec;
 }
+
+.sort-type-arrows {
+  margin-right: 17px;
+}
+
+.sort-type-arrows a:first-child{
+  margin-right: 21px;
+}
+
+.sort-type-arrows-style path{
+  fill: rgba(0, 0, 0, 0.3)
+}
+
+.sort-type-arrows-style:hover path,
+.sort-type-arrows-style:focus path{
+  fill: #000000;
+}
+
+.sort-type-arrows-style:active path{
+  fill: #ee3643;
+}
+
+
+
+
+
+
+
+
 
 .footer-links-bottom-wrapper {
   display: flex;
@@ -1406,6 +1483,22 @@ a.footer-logo:active {
   position: relative;
   padding: 0;
 }
+
+.catalog-list a{
+  color: #000000;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus{
+  text-decoration: underline;
+}
+
+.catalog-list a:active{
+  text-decoration: none;
+  color: #ee3643;
+}
+
+
 .catalog-list::before {
   content: "";
   background-image: url("../img/icon-home.svg");
@@ -1472,7 +1565,8 @@ a.footer-logo:active {
   width: 220px;
   display: flex;
   flex-direction: column;
-
+  align-items: stretch;
+  justify-content: flex-start;
   margin-left: 0px;
   position: relative;
 }
@@ -1487,15 +1581,14 @@ a.footer-logo:active {
 .filter-vendor-container {
   display: flex;
   flex-direction: column;
-  margin-top: 54px;
-  background-color: rgb(204, 250, 202);
+
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .filter-charger-container {
-  margin-top: 54px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(230, 220, 245);
 }
 
 .description-card-wrapper {
@@ -1564,6 +1657,7 @@ a.footer-logo:active {
   margin: 0px;
   margin-left: -10px;
 }
+
 .filter-container-title {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
@@ -1576,11 +1670,107 @@ a.footer-logo:active {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  text-align: left;
+
   font-weight: 400;
   padding-left: 18px;
+  background-color: rgb(204, 250, 202);
+  min-height: 38px;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.filter-button{
+.filter-button {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 1px solid #e5e5e5;
+  margin-top: 83px;
+}
 
+.checkbox-input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.check {
+  padding-left: 35px;
+}
+
+.checkbox-icon {
+  /* Чекбокс выключенный без галочки */
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  margin-left: -35px;
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.8;
+}
+
+.checkbox-icon:hover,
+.checkbox-icon:focus {
+  opacity: 1;
+}
+
+/* Checked - уже  нажатые*/
+.checkbox-input:checked + .checkbox-icon {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+/*focus  - нажимается и ставится галочка*/
+.checkbox-input:focus + .checkbox-icon {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.checkbox-input:checked:focus + .checkbox-icon {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.radio {
+  padding-left: 35px;
+}
+
+.radio-input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+.radio-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -35px;
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.8;
+}
+
+.radio-icon:hover,
+.radio-icon:focus {
+  opacity: 1;
+}
+
+.radio-input:checked + .radio-icon {
+  background-image: url("../img/radio-on.svg");
+}
+
+.radio-input:focus + .radio-icon {
+  background-image: url("../img/radio-on.svg");
+}
+
+. .radio-input:checked:focus + .radio-icon {
+  background-image: url("../img/radio-on.svg");
+}
+
+.test555 {
+  position: relative;
 }
