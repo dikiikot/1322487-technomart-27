@@ -4,6 +4,7 @@ html * {
 .img {
   max-width: 100%;
   height: auto;
+  
 }
 
 .header-container {
@@ -146,7 +147,7 @@ a {
 
 .user-navigation a {
   padding-top: 21px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   justify-content: center;
 }
 
@@ -154,6 +155,7 @@ a {
   width: 940px;
   margin: auto;
   background-color: #32425c;
+  
 }
 
 .user-navigation a {
@@ -354,7 +356,7 @@ a.main-header-logo:active {
   color: #ee3643;
   flex-basis: 196px;
   margin-left: 55px;
-  margin-bottom: 44px;
+  margin-bottom: 39px;
   margin-top: 0px;
 }
 
@@ -536,7 +538,7 @@ a.button-block-color:active {
 
 .description-features-span {
   position: absolute;
-  top: 26px;
+  top: 21px;
   left: 23px;
 }
 
@@ -584,6 +586,7 @@ a.button-block-color:active {
   background-size: 59px 72px;
   background-position-x: 196px;
   background-position-y: 26px;
+  margin-top: 0px;
 }
 
 .bgcolor-pale {
@@ -595,6 +598,7 @@ a.button-block-color:active {
   background-size: 78px 63px;
   background-position-x: 191px;
   background-position-y: 32px;
+  margin-bottom: 0px;
 }
 
 .popular-card-container {
@@ -615,8 +619,10 @@ a.button-block-color:active {
   font-size: 30px;
   text-align: left;
   font-weight: normal;
-  margin-left: 30px;
-  margin-bottom: 35px;
+  margin-left: 28px;
+  
+  margin-bottom: 34px;
+  text-transform: uppercase;
 }
 
 .right-container {
@@ -624,7 +630,7 @@ a.button-block-color:active {
 }
 
 .buttonred {
-  /* Красные кнопки*/
+  
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #ee3643;
   color: white;
@@ -633,13 +639,14 @@ a.button-block-color:active {
   width: 253px;
   min-height: 38px;
   text-align: center;
-
+  bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   position: relative;
   margin-right: 24px;
+  border-radius: 3px;
 }
 
 .buttonred:hover,
@@ -1235,6 +1242,7 @@ a.footer-logo:active {
   /* текс на слайдере*/
   position: relative;
   width: 100%;
+  
 }
 
 .catalog-container {
@@ -1243,7 +1251,7 @@ a.footer-logo:active {
   width: 940px;
   justify-content: space-between;
   margin: auto;
-  margin-top: 59px;
+  margin-top: 57px;
   margin-bottom: 53px;
 }
 
@@ -1263,7 +1271,7 @@ a.footer-logo:active {
   position: absolute;
   width: 100%;
   left: 24px;
-  top: 27px;
+  top: 23px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -1277,7 +1285,7 @@ a.footer-logo:active {
   position: absolute;
   width: 100%;
   left: 25px;
-  top: 65px;
+  top: 62px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   text-align: left;
@@ -1292,8 +1300,8 @@ a.footer-logo:active {
   background-image: url("../img/icon-left.svg");
   width: 22px;
   height: 40px;
-  left: 0px;
-  top: 85px;
+  left: 1px;
+  top: 91px;
 }
 
 .sign::after {
@@ -1302,8 +1310,8 @@ a.footer-logo:active {
   background-image: url("../img/icon-right.svg");
   width: 22px;
   height: 40px;
-  top: 85px;
-  left: 558px;
+  top: 91px;
+  left: 554px;
 }
 
 .slider-link {
@@ -2125,4 +2133,8 @@ input[type="text"]:focus {
 
 input[type="text"]:active {
   border: 2px solid #ee3643;
+}
+
+.test111{
+  display: block;
 }
