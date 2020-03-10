@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">  <!--    ^\s*$\n     -->
+<html lang="ru">
+
 <head>
    <meta charset="utf-8" />
    <title>HTML Academy: Техномарт</title>
@@ -10,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
       rel="stylesheet">
 </head>
+
 <body>
    <div class="header-container">
       <header class="main-header">
@@ -18,8 +20,8 @@
          </h1>
          <div class="site-navigation-wrapper">
             <div class="site-navigation">
-               <a class="main-header-logo" href="#"><img src="img/logo.svg" width="109" height="19"
-                     alt=" Магазин Техномарт"></a>
+               <a class="main-header-logo" href="#"><img class="img-wrapper-block" src="img/logo.svg" width="109"
+                     height="19" alt=" Магазин Техномарт"></a>
                <form class="form-container" action="https://echo.htmlacademy.ru" method="POST">
                   <label class="search" for="cite-search">
                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -78,8 +80,8 @@
                   <span class="description-features-span">Инструмент</span>
                   <a class="button-block-color" href="#">На все случаи</a>
                </div>
-               <div class="text-slider slider-image-first "> <img class="test111" src="img/slider-image.jpg" width="620" height="266"
-                     alt="Дрели">
+               <div class="text-slider slider-image-first "> <img class="img-wrapper-block" src="img/slider-image.jpg"
+                     width="620" height="266" alt="Дрели">
                   <span class="sign">Дрели</span>
                   <p class="sign-bottom">Соседям на радость</p>
                   <a class="slider-link" href="catalog.html">Открыть Каталог</a>
@@ -211,8 +213,8 @@
          <section class="options">
             <div class="options-container">
                <h3 class="services-options">Сервисы</h3>
-               <p class="content-options">
-                  Хороший магазин отличается от плохого не только ценами! Мы стараемся
+               <p class="options-container-title">
+                  Хороший магазин отличается от плохого не только ценами! &nbsp; &nbsp; Мы стараемся
                   изо всех сил, чтобы сделать ваши покупки приятными.
                </p>
             </div>
@@ -231,7 +233,8 @@
                   </p>
                </div>
                <div class="img-wrapper">
-                  <img src="img/delivery.png" width="468" height="261" alt="Доставим товар к подъезду">
+                  <img class="img-wrapper-block" src="img/delivery.png" width="468" height="261"
+                     alt="Доставим товар к подъезду">
                </div>
             </div>
             <div class=" provider-options-container visually-hidden">
@@ -268,13 +271,13 @@
       </div>
       <div class="section-container">
          <section class="section-container-left">
-            <h2 class="section-title">Компания "Техномарт"</h2>
+            <h2 class="section-title">Компания &laquo;Техномарт&raquo;</h2>
             <p class="section-content">
                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
                ремонта и строительства не оставит равнодушными любителей сэкономить
                на гастарбайтерах.
             </p>
-            <p class="section-content">
+            <p class="section-content section-content-para-dos">
                Мы можем доставить ваш товар в самые отдаленные точки России!
                Техномарт работает со многими транспортными компаниями:
             </p>
@@ -283,11 +286,11 @@
                <li>Автотрейдинг</li>
                <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="buttonred" href="#">Подробнее о компании</a>
+            <a class="buttonred left-container" href="#">Подробнее о компании</a>
          </section>
          <section class="section-container-right">
             <h2 class="section-title">Контакты</h2>
-            <p class="section-content">
+            <p class="section-content section-content-para-tres">
                Вы можете забрать товар сами заехав в наш офис
             </p>
             <a href="img/map-slider.png"><img src="img/map.png" width="300" height="158"
@@ -340,7 +343,7 @@
                      Обратная связь:
                      <a class="footer-link-service" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                   </p>
-                  <p class="feedback">
+                  <p class="feedback feedback-second-link">
                      Разработано &ndash;
                      <a class="footer-link-service" href="https://htmlacademy.ru/">htmlacademy.ru</a>
                   </p>
@@ -382,4 +385,5 @@
       </section>
    </div>
 </body>
+
 </html>

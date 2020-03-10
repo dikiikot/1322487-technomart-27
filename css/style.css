@@ -4,7 +4,6 @@ html * {
 .img {
   max-width: 100%;
   height: auto;
-  
 }
 
 .header-container {
@@ -47,7 +46,7 @@ a {
   width: 940px;
   background-color: #293449;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   min-height: 42px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -137,7 +136,7 @@ a {
   min-height: 62px;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -149,13 +148,15 @@ a {
   padding-top: 21px;
   padding-bottom: 20px;
   justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
 
 .main-navigation {
   width: 940px;
   margin: auto;
   background-color: #32425c;
-  
+  box-shadow: inset 0px -5px 0 0;
 }
 
 .user-navigation a {
@@ -164,7 +165,7 @@ a {
 
 .user-navigation li {
   flex-grow: 3;
-  align-content: center;
+  align-items: stretch;
 }
 
 .main-header {
@@ -262,11 +263,22 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   text-decoration: none;
-  padding-top: 14px;
-  padding-bottom: 15px;
-  width: 121px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 21px;
   text-align: center;
   min-height: 23px;
+}
+
+.button-link:first-child {
+  padding-left: 18px;
+
+  padding-right: 27px;
+  margin-right: 10px;
+}
+.button-link:last-child {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .button-link:hover,
@@ -320,8 +332,8 @@ a {
 
 .button-header-wrapper {
   display: flex;
-  margin-bottom: 33px;
-  flex-basis: 271px;
+  /*margin-bottom: 33px;*/
+
   justify-content: space-around;
   align-items: center;
 }
@@ -336,7 +348,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: -5px;
-  padding: 13px 0 18px 0;
+  /*padding: 15px 0 18px 0;*/
 }
 
 a.main-header-logo:hover,
@@ -367,10 +379,10 @@ a.main-header-logo:active {
   font-size: 21px;
   line-height: 21px;
   position: relative;
-  width: 270px;
+  width: 264px;
   min-height: 45px;
-  padding-top: 4px;
-  padding-bottom: 3px;
+
+  padding-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,13 +409,12 @@ a.main-header-logo:active {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  margin-top: 6px;
 }
 
 a.button-order {
   display: block;
   background-color: #63a63e;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 13px;
   padding-left: 20px;
   padding-right: 22px;
@@ -427,7 +438,8 @@ a.button-order:active {
 }
 
 .form-container {
-  margin-left: -17px;
+  margin-left: -20px;
+  padding-left: 16px;
 }
 
 .form-container:hover {
@@ -620,17 +632,14 @@ a.button-block-color:active {
   text-align: left;
   font-weight: normal;
   margin-left: 28px;
-  
-  margin-bottom: 34px;
+  padding-top: 1px;
+  margin-bottom: 24px;
+  padding-bottom: 4px;
+
   text-transform: uppercase;
 }
 
-.right-container {
-  margin-top: 40px;
-}
-
 .buttonred {
-  
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #ee3643;
   color: white;
@@ -639,7 +648,7 @@ a.button-block-color:active {
   width: 253px;
   min-height: 38px;
   text-align: center;
-  bottom: 3px;
+  bottom: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -658,6 +667,17 @@ a.button-block-color:active {
   background-color: #ba2732;
 }
 
+.right-container {
+  margin-top: 34px;
+  border-radius: 3px;
+  width: 300px;
+  margin-right: 0px;
+}
+.left-container {
+  width: 220px;
+  margin-top: 39px;
+}
+
 .popular-it {
   list-style: none;
   display: flex;
@@ -669,6 +689,7 @@ a.button-block-color:active {
   margin: auto;
   margin-top: 21px;
   padding-left: 0px;
+  vertical-align: middle;
 }
 
 .flag {
@@ -691,9 +712,9 @@ a.button-block-color:active {
   min-height: 318px;
   border: 1px solid #eaeaea;
 
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   margin-bottom: 20px;
-  padding-bottom: 21px;
+  /*padding-bottom: 21px;*/
 
   display: flex;
   flex-direction: column;
@@ -708,14 +729,14 @@ a.button-block-color:active {
 .catalog-items {
   font-family: "PTSans", Arial, sans-serif;
   line-height: 20px;
-  font-size: 18px;
+
   font-weight: 700;
   text-align: center;
   vertical-align: top;
   min-height: 40px;
-  padding: 0 25px;
+
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .buy:hover,
@@ -787,8 +808,8 @@ a.button-block-color:active {
   color: #a9a9a9;
   text-align: center;
   text-decoration: line-through;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 8px;
   min-height: 20px;
 }
 
@@ -797,12 +818,13 @@ a.button-block-color:active {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: auto;
+
+  margin-bottom: 21px;
+  margin-left: 42px;
   margin-right: auto;
   position: relative;
-  padding: 10px 30px;
+  padding: 10px 36px;
+  padding-right: 41px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -876,18 +898,26 @@ a.button-block-color:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 
 .menu-options {
   list-style: none;
-  margin-top: 14px;
+  margin-top: 38px;
   padding: 20px;
   list-style: none;
   color: #ffffff;
   text-align: center;
   padding-left: 0px;
-  margin-bottom: 99px;
+  /*margin-bottom: 99px;*/
+}
+
+.provider-options-container ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .menu-options a {
@@ -897,14 +927,15 @@ a.button-block-color:active {
   background-color: #32425c;
   color: #ffffff;
   width: 240px;
-  padding-top: 21px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 30px;
   padding-left: 21px;
   box-shadow: inset 0px 1px 0 0 #405069;
+  font-weight: 700;
 }
 
 .menu-options a {
@@ -929,49 +960,63 @@ a.button-block-color:active {
 .services-options {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  line-height: 30px;
+  /*line-height: 30px;*/
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .delivery-options {
-  /* Описание заголовков доп опций */
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #32425c;
+  margin-bottom: 34px;
 }
 
 .content-options {
-  /* Описание текста в секции*/
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   width: 275px;
+  margin-bottom: 0px;
+  margin-top: -10px;
+}
+
+.options-container-title {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 400px;
 }
 
 .middle-container {
   /*display: flex;
   flex-direction: column;*/
-  margin-left: 80px;
-  margin-bottom: 135px;
+  margin-left: 59px;
+
   position: relative;
   z-index: 2;
 }
 
 .img-wrapper {
-  right: 130px;
+  right: 123px;
+  top: 58px;
   position: relative;
   z-index: 1;
+  display: block;
 }
 
 .section-title {
-  /* Описывает заголовки секции*/
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-container {
@@ -979,7 +1024,7 @@ a.button-block-color:active {
   width: 940px;
   margin: auto;
   margin-bottom: 86px;
-  margin-top: 82px;
+  margin-top: 78px;
 }
 
 .section-container-left {
@@ -990,8 +1035,8 @@ a.button-block-color:active {
 .section-container-right {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
-  margin-right: 20px;
+  margin-left: 80px;
+  margin-right: 0px;
 }
 
 .section-content {
@@ -1001,6 +1046,7 @@ a.button-block-color:active {
   line-height: 24px;
   font-weight: 400;
   white-space: normal;
+  margin-top: 26px;
 }
 
 .delivery-services {
@@ -1015,7 +1061,7 @@ a.button-block-color:active {
 
 ul.delivery-services {
   list-style: none;
-  margin-left: 10px;
+  margin-left: 29px;
 }
 
 ul.delivery-services li:before {
@@ -1027,7 +1073,7 @@ ul.delivery-services li:before {
 }
 
 .delivery-services li {
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 12px;
 }
 
@@ -1040,6 +1086,7 @@ ul.delivery-services li:before {
   flex-direction: row;
   width: 940px;
   margin: auto;
+  align-items: flex-end;
 }
 
 .footer-logo {
@@ -1073,7 +1120,7 @@ a.footer-logo:active {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 173px;
-  padding-left: 10px;
+  padding-left: 0px;
   flex-basis: 850px;
 
   padding-left: 0px;
@@ -1104,9 +1151,11 @@ a.footer-logo:active {
   font-size: 18px;
   font-weight: 400;
   flex-basis: 745px;
-  align-items: center;
-  margin-left: 91px;
+  align-items: flex-start;
+  margin-left: 112px;
   flex-shrink: 5;
+  padding-left: 0px;
+  margin-top: 28px;
 }
 
 .footer-links-bottom a {
@@ -1130,11 +1179,12 @@ a.footer-logo:active {
   line-height: 24px;
   font-size: 18px;
   font-weight: 400;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   flex-wrap: nowrap;
   width: 322px;
   min-height: 40px;
-  margin-top: 32px;
+  margin-top: 29px;
+  margin-bottom: 51px;
 }
 
 .footer-bottom {
@@ -1159,14 +1209,14 @@ a.footer-logo:active {
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
-  margin-left: 133px;
+  margin-left: 130px;
 }
 
 .feedback {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 35px;
+  flex-basis: 96px;
   flex-wrap: wrap;
   align-items: center;
 
@@ -1175,6 +1225,10 @@ a.footer-logo:active {
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.feedback-second-link {
+  margin-left: -35px;
 }
 
 .footer-link-service {
@@ -1203,8 +1257,8 @@ a.footer-logo:active {
   display: flex;
   flex-direction: row;
   flex-basis: 132px;
-  margin-left: 169px;
-  margin-bottom: 30px;
+  margin-left: 162px;
+
   padding-left: 0;
 }
 .media li {
@@ -1231,7 +1285,7 @@ a.footer-logo:active {
 .feedback-container {
   display: flex;
   justify-content: space-around;
-  margin-left: 53px;
+  margin-left: 65px;
 }
 
 .slider-image-second {
@@ -1242,7 +1296,6 @@ a.footer-logo:active {
   /* текс на слайдере*/
   position: relative;
   width: 100%;
-  
 }
 
 .catalog-container {
@@ -1329,6 +1382,7 @@ a.footer-logo:active {
   text-transform: uppercase;
   padding: 10px;
   width: 195px;
+  border-radius: 3px;
 }
 
 .slider-link:hover,
@@ -1352,13 +1406,14 @@ a.footer-logo:active {
 }
 
 .product-title {
-  /* Заголовок*/
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   text-align: left;
-  margin-top: 42px;
+  margin-top: 67px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .product-text {
@@ -1367,13 +1422,14 @@ a.footer-logo:active {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 73px;
+  margin-top: 23px;
+  margin-bottom: 67px;
 }
 
 .page-number {
   font-weight: 400;
-  margin-bottom: 60px;
-  margin-top: 52px;
+  margin-bottom: 68px;
+  margin-top: 24px;
 }
 
 .page-number a:first-child {
@@ -1385,13 +1441,14 @@ a.footer-logo:active {
 .page-numbers {
   border: solid 1px #e5e5e5;
   padding: 14px 15px 12px 16px;
-  margin-left: 10px;
+  margin-left: 4px;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   width: 38px;
   height: 38px;
+  text-transform: uppercase;
 }
 .page-numbers:hover,
 .page-numbers:focus {
@@ -1410,11 +1467,16 @@ a.footer-logo:active {
   border: solid 1px #ee3643;
 }
 
+.page-number a:last-child {
+  padding-left: 32px;
+  padding-right: 20px;
+}
+
 .sort-wrapper {
   background-color: #f7f3ec;
   width: 700px;
   min-height: 38px;
-
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1430,6 +1492,7 @@ a.footer-logo:active {
   background-color: #f7f3ec;
   border-bottom: 1px solid #ee3643;
   color: rgba(0, 0, 0, 0.3);
+  display: flex;
 }
 
 .sort-type:hover,
@@ -1472,8 +1535,8 @@ a.footer-logo:active {
 }
 
 .catalog-list {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -1481,6 +1544,10 @@ a.footer-logo:active {
   align-items: center;
   position: relative;
   padding: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .catalog-list a {
@@ -1585,7 +1652,8 @@ a.footer-logo:active {
 }
 
 .filter-vendor-style {
-  margin-top: 17px;
+  margin-top: 15px;
+  text-transform: uppercase;
 }
 
 .filter-charger-container {
@@ -1594,7 +1662,12 @@ a.footer-logo:active {
 }
 
 .filter-charger-style {
-  margin-top: 16px;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.radio-button-second-style {
+  margin-top: 15px;
 }
 
 .description-card-wrapper {
@@ -1605,6 +1678,7 @@ a.footer-logo:active {
   align-items: baseline;
   padding-left: 0px;
   width: 700px;
+  margin-top: 21px;
 }
 
 .description-card-wrapper li {
@@ -1636,12 +1710,13 @@ a.footer-logo:active {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  padding-left: 30px;
+  padding-left: 29px;
   padding-top: 30px;
   padding-bottom: 30px;
   line-height: 1;
   text-transform: uppercase;
   margin-top: 0px;
+  margin-bottom: 18px;
 }
 .catalog-rightside-wrapper {
   display: flex;
@@ -1661,11 +1736,11 @@ a.footer-logo:active {
   align-items: center;
   margin: 0px;
   margin-left: -10px;
-  margin-bottom: 21px;
-  margin-top: 25px;
+  margin-bottom: 11px;
+  margin-top: 0px;
 }
 
-.test444 {
+.filter-container-style-second {
   margin-bottom: 0px;
 }
 
@@ -1675,7 +1750,8 @@ a.footer-logo:active {
   line-height: 30px;
   text-align: left;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 14px;
+  text-transform: uppercase;
 }
 
 .filter-title {
@@ -1690,6 +1766,7 @@ a.footer-logo:active {
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .filter-button {
@@ -1699,10 +1776,14 @@ a.footer-logo:active {
   text-align: center;
   font-weight: 400;
   background-color: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid #e5e5e5;
-  margin-top: 83px;
+  margin-top: 68px;
+  text-transform: uppercase;
+  padding-right: 39px;
+  padding-left: 39px;
+  margin-right: 81px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -1796,7 +1877,7 @@ a.footer-logo:active {
 
 .range-filter {
   width: 220px;
-  margin-top: 21px;
+  margin-top: 11px;
 }
 
 .range-controls {
@@ -1837,7 +1918,7 @@ a.footer-logo:active {
 }
 
 .range-controls .toggle-min {
-  left: 0px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
@@ -1858,7 +1939,8 @@ a.footer-logo:active {
 
 .price-controls input {
   width: 95px;
-  padding: 13px 10px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 
   font-family: PTSans, Arial, sans-serif;
   font-size: 17px;
@@ -1874,7 +1956,6 @@ a.footer-logo:active {
   text-align: right;
 }
 
-/*Начинаем возню с модалками */
 input,
 textarea .search {
   background-color: #293449;
@@ -2135,6 +2216,22 @@ input[type="text"]:active {
   border: 2px solid #ee3643;
 }
 
-.test111{
+.img-wrapper-block {
   display: block;
+}
+
+.section-content-para-dos {
+  margin-top: 9px;
+  width: 440px;
+  margin-bottom: 0px;
+}
+.section-content-para-tres {
+  width: 179px;
+  margin-bottom: 30px;
+}
+.delivery-services li:first-child {
+  padding-top: 20px;
+}
+.delivery-services li:last-child {
+  padding-bottom: 0px;
 }
