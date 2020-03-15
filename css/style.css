@@ -102,6 +102,7 @@ a {
 
 .cart-icon {
   position: relative;
+  background-color: #ee3643;
 }
 
 .cart-icon::before {
@@ -1981,6 +1982,9 @@ input[type="email"] {
   padding-left: 16px;
 }
 
+
+
+
 .modal {
   position: fixed;
   background-color: #ffffff;
@@ -1994,6 +1998,7 @@ input[type="email"] {
   margin-left: -310px;
   border-top: 7px solid #ee3643;
   display: none;
+  z-index: 9999;
 }
 
 .modal-close {
@@ -2234,4 +2239,8 @@ input[type="text"]:active {
 }
 .delivery-services li:last-child {
   padding-bottom: 0px;
+}
+
+.modal-show{
+  display: block;
 }
