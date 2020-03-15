@@ -1991,6 +1991,8 @@ input[type="email"] {
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
+
+
 .modal-login {
   width: 620px;
   left: 50%;
@@ -2099,6 +2101,7 @@ input[type="email"] {
   margin-top: -223px;
   margin-left: -470px;
   display: none;
+  z-index: 9999;
 }
 .modal-map p {
   margin: 0px;
@@ -2190,24 +2193,9 @@ input[type="email"] {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.modal-registration {
-  width: 620px;
-  left: 50%;
-  bottom: 101px;
-  margin-left: -310px;
-  border-top: 7px solid #ee3643;
-  display: none;
-}
 
-.modal-registration-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 220px;
-  margin-top: 55px;
-  margin-left: 80px;
-  margin-bottom: 14px;
-}
+
+
 
 input[type="text"]:hover {
   border: 2px solid #b5b5b5;

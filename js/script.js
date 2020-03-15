@@ -47,3 +47,49 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+//карта
+var link = document.querySelector(".contacts-map");
+var mapLink = document.querySelector(".contacts-map");
+
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+var linkB = document.querySelectorAll(".test777");
+var popupB= document.querySelector(".modal-bucket");
+var closeB = popupB.querySelector(".modal-close");
+
+
+linkB.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupB.classList.add("modal-show");
+});
+closeB.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupB.classList.remove("modal-show");
+});
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popupB.classList.contains("modal-show")) {
+      popupB.classList.remove("modal-show");
+    }
+  }
+});
