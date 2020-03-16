@@ -375,6 +375,7 @@ a.button-order:active {
 .search:hover path {
   opacity: 1;
 }
+
 .form-container {
   padding-left: 36px;
   position: relative;
@@ -411,6 +412,7 @@ input[type="search"]:focus {
 input[type="search"]:active {
   background-color: #ffffff;
 }
+
 input[type="search"]::-moz-placeholder {
   color: #ffffff;
 }
@@ -623,9 +625,9 @@ a.button-block-color:active {
   width: 220px;
   min-height: 318px;
   border: 1px solid #eaeaea;
-  /*margin-top: 10px;*/
+
   margin-bottom: 20px;
-  /*padding-bottom: 21px;*/
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -636,9 +638,9 @@ a.button-block-color:active {
 }
 .catalog-items {
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   vertical-align: top;
   min-height: 40px;
   margin-top: 10px;
@@ -909,7 +911,6 @@ a.button-block-color:active {
   margin-right: 0px;
 }
 .section-content {
-  /* Описывает оформление текста в секции*/
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -918,7 +919,6 @@ a.button-block-color:active {
   margin-top: 26px;
 }
 .delivery-services {
-  /* Описываем список и маркировку тире*/
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -931,7 +931,7 @@ ul.delivery-services {
   margin-left: 29px;
 }
 ul.delivery-services li:before {
-  content: "-";
+  content: "\2014";
   position: relative;
   left: -5px;
   color: #ee3643;
@@ -1076,7 +1076,7 @@ a.footer-logo:active {
   margin-left: -35px;
 }
 .footer-link-service {
-  /*Описывает ссылки с служебной инфой */
+  
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   font-size: 16px;
@@ -1093,7 +1093,7 @@ a.footer-logo:active {
   color: #ee3643;
 }
 .media {
-  /* Убирает маркеры у списка медиа иконок*/
+  
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -1495,7 +1495,10 @@ a.footer-logo:active {
 }
 .description-card .prices,
 .description-card h4 {
-  padding: 0 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 12px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -1720,8 +1723,8 @@ a.footer-logo:active {
 input,
 textarea .search {
   background-color: #293449;
-  /*padding-top: 14px;
-  padding-bottom: 13px;*/
+  padding-top: 12px;
+  padding-bottom: 11px;
   border: none;
   padding-left: 15px;
 }
