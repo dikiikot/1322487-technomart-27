@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   font-weight: normal;
@@ -635,7 +635,7 @@ a.button-block-color:active {
   background-color: #ffffff;
 }
 .catalog-items {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -699,7 +699,7 @@ a.button-block-color:active {
   display: block;
 }
 .old-price {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -711,7 +711,7 @@ a.button-block-color:active {
   min-height: 20px;
 }
 .new-price {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -853,7 +853,7 @@ a.button-block-color:active {
   margin-bottom: 34px;
 }
 .content-options {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -862,7 +862,7 @@ a.button-block-color:active {
   margin-top: -10px;
 }
 .options-container-title {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -910,7 +910,7 @@ a.button-block-color:active {
 }
 .section-content {
   /* Описывает оформление текста в секции*/
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -1240,7 +1240,7 @@ a.footer-logo:active {
 }
 .product-text {
   /* текст*/
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -1261,7 +1261,7 @@ a.footer-logo:active {
   border: solid 1px #e5e5e5;
   padding: 14px 15px 12px 16px;
   margin-left: 4px;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -1296,7 +1296,7 @@ a.footer-logo:active {
   align-items: center;
   justify-content: space-between;
   padding-left: 19px;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1363,7 +1363,7 @@ a.footer-logo:active {
   align-items: center;
   position: relative;
   padding: 0;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1541,7 +1541,7 @@ a.footer-logo:active {
   margin-bottom: 0px;
 }
 .filter-container-title {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   text-align: left;
@@ -1550,7 +1550,7 @@ a.footer-logo:active {
   text-transform: uppercase;
 }
 .filter-title {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1563,7 +1563,7 @@ a.footer-logo:active {
   text-transform: uppercase;
 }
 .filter-button {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
@@ -1706,7 +1706,7 @@ a.footer-logo:active {
   width: 95px;
   padding-top: 9px;
   padding-bottom: 10px;
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 17px;
   text-align: center;
   color: #283136;
