@@ -64,7 +64,8 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
-var linkB = document.querySelectorAll(".test777");
+// список купить -продать 
+var linkB = document.querySelectorAll(".");
 var popupB = document.querySelector(".modal-bucket");
 var closeB = popupB.querySelector(".modal-close");
 linkB.addEventListener("click", function(evt) {
